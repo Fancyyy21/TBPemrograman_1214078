@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDataPegawai));
             this.tbCariData = new System.Windows.Forms.TextBox();
             this.labelCariData = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -57,20 +58,20 @@
             // 
             // tbCariData
             // 
-            this.tbCariData.Location = new System.Drawing.Point(646, 245);
-            this.tbCariData.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCariData.Location = new System.Drawing.Point(861, 302);
+            this.tbCariData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbCariData.Name = "tbCariData";
-            this.tbCariData.Size = new System.Drawing.Size(261, 20);
+            this.tbCariData.Size = new System.Drawing.Size(347, 22);
             this.tbCariData.TabIndex = 60;
             this.tbCariData.TextChanged += new System.EventHandler(this.tbCariData_TextChanged);
             // 
             // labelCariData
             // 
             this.labelCariData.AutoSize = true;
-            this.labelCariData.Location = new System.Drawing.Point(574, 247);
-            this.labelCariData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCariData.Location = new System.Drawing.Point(765, 304);
+            this.labelCariData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelCariData.Name = "labelCariData";
-            this.labelCariData.Size = new System.Drawing.Size(48, 13);
+            this.labelCariData.Size = new System.Drawing.Size(60, 16);
             this.labelCariData.TabIndex = 59;
             this.labelCariData.Text = "CariData";
             // 
@@ -78,86 +79,86 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 27);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(27, 33);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(190, 29);
+            this.label7.Size = new System.Drawing.Size(234, 33);
             this.label7.TabIndex = 56;
             this.label7.Text = "DATA PEGAWAI";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(443, 180);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(591, 222);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.Size = new System.Drawing.Size(47, 16);
             this.label4.TabIndex = 55;
             this.label4.Text = "No HP";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(443, 89);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(591, 110);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.Size = new System.Drawing.Size(90, 16);
             this.label5.TabIndex = 52;
             this.label5.Text = "Jenis Kelamin";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(443, 135);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(591, 166);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.Size = new System.Drawing.Size(39, 16);
             this.label6.TabIndex = 53;
             this.label6.Text = "Umur";
             // 
             // tbAlamat
             // 
-            this.tbAlamat.Location = new System.Drawing.Point(122, 174);
-            this.tbAlamat.Margin = new System.Windows.Forms.Padding(4);
+            this.tbAlamat.Location = new System.Drawing.Point(163, 214);
+            this.tbAlamat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbAlamat.Name = "tbAlamat";
-            this.tbAlamat.Size = new System.Drawing.Size(261, 20);
+            this.tbAlamat.Size = new System.Drawing.Size(347, 22);
             this.tbAlamat.TabIndex = 51;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 177);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(27, 218);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.Size = new System.Drawing.Size(49, 16);
             this.label3.TabIndex = 50;
             this.label3.Text = "Alamat";
             // 
             // tbNamaPegawai
             // 
-            this.tbNamaPegawai.Location = new System.Drawing.Point(122, 86);
-            this.tbNamaPegawai.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNamaPegawai.Location = new System.Drawing.Point(163, 106);
+            this.tbNamaPegawai.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbNamaPegawai.Name = "tbNamaPegawai";
-            this.tbNamaPegawai.Size = new System.Drawing.Size(261, 20);
+            this.tbNamaPegawai.Size = new System.Drawing.Size(347, 22);
             this.tbNamaPegawai.TabIndex = 49;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 89);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(27, 110);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 46;
             this.label1.Text = "Nama Pegawai";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 132);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(27, 162);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 47;
             this.label2.Text = "Jabatan";
             // 
@@ -167,21 +168,21 @@
             this.groupBox3.Controls.Add(this.btnRefresh);
             this.groupBox3.Controls.Add(this.btnSimpan);
             this.groupBox3.Controls.Add(this.btnUbah);
-            this.groupBox3.Location = new System.Drawing.Point(14, 219);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(19, 270);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(467, 60);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox3.Size = new System.Drawing.Size(623, 74);
             this.groupBox3.TabIndex = 45;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tombol Action";
             // 
             // btnHapus
             // 
-            this.btnHapus.Location = new System.Drawing.Point(350, 21);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHapus.Location = new System.Drawing.Point(467, 26);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(106, 28);
+            this.btnHapus.Size = new System.Drawing.Size(141, 34);
             this.btnHapus.TabIndex = 17;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
@@ -189,10 +190,10 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(8, 21);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Location = new System.Drawing.Point(11, 26);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(106, 28);
+            this.btnRefresh.Size = new System.Drawing.Size(141, 34);
             this.btnRefresh.TabIndex = 14;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -200,10 +201,10 @@
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(122, 21);
-            this.btnSimpan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSimpan.Location = new System.Drawing.Point(163, 26);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(106, 28);
+            this.btnSimpan.Size = new System.Drawing.Size(141, 34);
             this.btnSimpan.TabIndex = 15;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
@@ -211,10 +212,10 @@
             // 
             // btnUbah
             // 
-            this.btnUbah.Location = new System.Drawing.Point(236, 21);
-            this.btnUbah.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUbah.Location = new System.Drawing.Point(315, 26);
+            this.btnUbah.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnUbah.Name = "btnUbah";
-            this.btnUbah.Size = new System.Drawing.Size(106, 28);
+            this.btnUbah.Size = new System.Drawing.Size(141, 34);
             this.btnUbah.TabIndex = 16;
             this.btnUbah.Text = "Ubah";
             this.btnUbah.UseVisualStyleBackColor = true;
@@ -226,33 +227,36 @@
             this.cbJenisKelamin.Items.AddRange(new object[] {
             "Laki-Laki",
             "Perempuan"});
-            this.cbJenisKelamin.Location = new System.Drawing.Point(557, 86);
+            this.cbJenisKelamin.Location = new System.Drawing.Point(743, 106);
+            this.cbJenisKelamin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbJenisKelamin.Name = "cbJenisKelamin";
-            this.cbJenisKelamin.Size = new System.Drawing.Size(261, 21);
+            this.cbJenisKelamin.Size = new System.Drawing.Size(347, 24);
             this.cbJenisKelamin.TabIndex = 61;
             // 
             // tbNoHP
             // 
-            this.tbNoHP.Location = new System.Drawing.Point(557, 175);
-            this.tbNoHP.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNoHP.Location = new System.Drawing.Point(743, 215);
+            this.tbNoHP.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbNoHP.Name = "tbNoHP";
-            this.tbNoHP.Size = new System.Drawing.Size(261, 20);
+            this.tbNoHP.Size = new System.Drawing.Size(347, 22);
             this.tbNoHP.TabIndex = 63;
             // 
             // tbUmur
             // 
-            this.tbUmur.Location = new System.Drawing.Point(557, 130);
-            this.tbUmur.Margin = new System.Windows.Forms.Padding(4);
+            this.tbUmur.Location = new System.Drawing.Point(743, 160);
+            this.tbUmur.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbUmur.Name = "tbUmur";
-            this.tbUmur.Size = new System.Drawing.Size(261, 20);
+            this.tbUmur.Size = new System.Drawing.Size(347, 22);
             this.tbUmur.TabIndex = 62;
             // 
             // TabelDataPegawai
             // 
             this.TabelDataPegawai.Controls.Add(this.DataPegawai);
-            this.TabelDataPegawai.Location = new System.Drawing.Point(14, 308);
+            this.TabelDataPegawai.Location = new System.Drawing.Point(19, 379);
+            this.TabelDataPegawai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TabelDataPegawai.Name = "TabelDataPegawai";
-            this.TabelDataPegawai.Size = new System.Drawing.Size(1122, 355);
+            this.TabelDataPegawai.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TabelDataPegawai.Size = new System.Drawing.Size(1496, 437);
             this.TabelDataPegawai.TabIndex = 64;
             this.TabelDataPegawai.TabStop = false;
             this.TabelDataPegawai.Text = "Tabel Data Pegawai";
@@ -261,10 +265,11 @@
             // 
             this.DataPegawai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataPegawai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataPegawai.Location = new System.Drawing.Point(6, 25);
+            this.DataPegawai.Location = new System.Drawing.Point(8, 31);
+            this.DataPegawai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataPegawai.Name = "DataPegawai";
             this.DataPegawai.RowHeadersWidth = 51;
-            this.DataPegawai.Size = new System.Drawing.Size(1110, 324);
+            this.DataPegawai.Size = new System.Drawing.Size(1480, 399);
             this.DataPegawai.TabIndex = 0;
             this.DataPegawai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataPegawai_CellClick);
             // 
@@ -274,17 +279,18 @@
             this.cbJabatan.Items.AddRange(new object[] {
             "CEO",
             "Admin"});
-            this.cbJabatan.Location = new System.Drawing.Point(122, 130);
+            this.cbJabatan.Location = new System.Drawing.Point(163, 160);
+            this.cbJabatan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbJabatan.Name = "cbJabatan";
-            this.cbJabatan.Size = new System.Drawing.Size(261, 21);
+            this.cbJabatan.Size = new System.Drawing.Size(347, 24);
             this.cbJabatan.TabIndex = 62;
             // 
             // FormDataPegawai
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(157)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(1159, 688);
+            this.ClientSize = new System.Drawing.Size(1545, 847);
             this.Controls.Add(this.cbJabatan);
             this.Controls.Add(this.TabelDataPegawai);
             this.Controls.Add(this.tbNoHP);
@@ -302,7 +308,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox3);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormDataPegawai";
             this.Text = "FormDataPegawai";
             this.Load += new System.EventHandler(this.FormDataPegawai_Load);
