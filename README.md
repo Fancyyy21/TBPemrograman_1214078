@@ -1,3 +1,2 @@
 # TUGAS BESAR PEMROGRAMAN
-
-HAY GUYS MAULANA DISINI :v
+Mohon doanya agar project ini selesai dengan cepat. ❤️❤️❤️❤️❤️❤️
