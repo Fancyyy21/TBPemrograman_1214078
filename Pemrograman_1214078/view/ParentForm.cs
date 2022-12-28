@@ -56,7 +56,7 @@ namespace Pemrograman_1214078.view
 
         private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

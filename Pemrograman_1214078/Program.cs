@@ -17,7 +17,7 @@ namespace Pemrograman_1214078
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FormAwalUtama());
         }
     }
 }

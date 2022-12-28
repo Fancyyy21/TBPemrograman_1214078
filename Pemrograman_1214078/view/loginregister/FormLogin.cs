@@ -253,7 +253,12 @@ namespace Pemrograman_1214078
             FormRegister newRegister = new FormRegister();
             newRegister.Show();
         }
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAwalUtama newFormAwalUtama = new FormAwalUtama();
+            newFormAwalUtama.Show();
+        }
         private void FormLoginRegister_Load(object sender, EventArgs e)
         {
 
@@ -278,5 +283,7 @@ namespace Pemrograman_1214078
         {
 
         }
+
+        
     }
 }

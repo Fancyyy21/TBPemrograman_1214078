@@ -42,6 +42,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.LoginDisini = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1257, 43);
             this.panel1.TabIndex = 8;
@@ -66,7 +67,7 @@
             this.btnClose.Font = new System.Drawing.Font("Mongolian Baiti", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(1213, 4);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(40, 37);
             this.btnClose.TabIndex = 5;
@@ -81,7 +82,7 @@
             this.btnMinimize.Font = new System.Drawing.Font("Mongolian Baiti", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Location = new System.Drawing.Point(1165, 4);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(40, 37);
             this.btnMinimize.TabIndex = 3;
@@ -94,7 +95,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Marlett", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(937, 319);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(182, 26);
             this.checkBox1.TabIndex = 17;
@@ -105,7 +106,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(937, 276);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(245, 22);
             this.textBox2.TabIndex = 16;
@@ -114,7 +115,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(937, 197);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(245, 22);
             this.textBox1.TabIndex = 15;
@@ -155,7 +156,7 @@
             // Registrasi
             // 
             this.Registrasi.Location = new System.Drawing.Point(1007, 367);
-            this.Registrasi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Registrasi.Margin = new System.Windows.Forms.Padding(4);
             this.Registrasi.Name = "Registrasi";
             this.Registrasi.Size = new System.Drawing.Size(100, 28);
             this.Registrasi.TabIndex = 11;
@@ -168,7 +169,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(812, 489);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +193,7 @@
             this.LoginDisini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginDisini.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginDisini.Location = new System.Drawing.Point(991, 484);
-            this.LoginDisini.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoginDisini.Margin = new System.Windows.Forms.Padding(4);
             this.LoginDisini.Name = "LoginDisini";
             this.LoginDisini.Size = new System.Drawing.Size(141, 26);
             this.LoginDisini.TabIndex = 21;
@@ -200,12 +201,28 @@
             this.LoginDisini.UseVisualStyleBackColor = true;
             this.LoginDisini.Click += new System.EventHandler(this.LoginDisini_Click);
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(13, 51);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(64, 29);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(157)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1257, 532);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.LoginDisini);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
@@ -219,7 +236,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormRegister";
             this.Text = "FormRegistrasi";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormRegister_MouseDown);
@@ -245,5 +262,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button LoginDisini;
+        private System.Windows.Forms.Button button1;
     }
 }

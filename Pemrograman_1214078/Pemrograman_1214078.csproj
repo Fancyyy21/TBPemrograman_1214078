@@ -89,51 +89,106 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controller\CekLogin.cs" />
-    <Compile Include="controller\CekRegister.cs" />
-    <Compile Include="controller\DataCustomer.cs" />
-    <Compile Include="controller\DataPegawai.cs" />
+    <Compile Include="controller\loginregister\CekLogin.cs" />
+    <Compile Include="controller\loginregister\CekRegister.cs" />
+    <Compile Include="controller\master\DataCustomer.cs" />
+    <Compile Include="controller\master\DataPegawai.cs" />
     <Compile Include="controller\Koneksi.cs" />
-    <Compile Include="model\M_DataCustomer.cs" />
-    <Compile Include="model\M_DataPegawai.cs" />
-    <Compile Include="model\M_User.cs" />
+    <Compile Include="controller\master\DataUnit.cs" />
+    <Compile Include="model\master\M_DataCustomer.cs" />
+    <Compile Include="model\master\M_DataPegawai.cs" />
+    <Compile Include="model\loginregister\M_User.cs" />
+    <Compile Include="view\datatransaksi\FormTransaksiMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\datatransaksi\FormTransaksiMasuk.Designer.cs">
+      <DependentUpon>FormTransaksiMasuk.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormAboutMe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\FormAboutMe.Designer.cs">
       <DependentUpon>FormAboutMe.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\FormDataCustomer.cs">
+    <Compile Include="view\FormAwalUtama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormDataCustomer.Designer.cs">
+    <Compile Include="view\FormAwalUtama.Designer.cs">
+      <DependentUpon>FormAwalUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\master\FormDataCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\master\FormDataCustomer.Designer.cs">
       <DependentUpon>FormDataCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\FormDataPegawai.cs">
+    <Compile Include="view\master\FormDataPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormDataPegawai.Designer.cs">
+    <Compile Include="view\master\FormDataPegawai.Designer.cs">
       <DependentUpon>FormDataPegawai.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\FormLogin.cs">
+    <Compile Include="view\katalog\BestSeller.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormLogin.Designer.cs">
+    <Compile Include="view\katalog\BestSeller.Designer.cs">
+      <DependentUpon>BestSeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\katalog\FormKatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\katalog\FormKatalog.Designer.cs">
+      <DependentUpon>FormKatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\katalog\Promo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\katalog\Promo.Designer.cs">
+      <DependentUpon>Promo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\loginregister\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\loginregister\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="view\FormRegister.cs">
+    <Compile Include="view\loginregister\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormRegister.Designer.cs">
+    <Compile Include="view\loginregister\FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\FormTransaksiPenjualan.cs">
+    <Compile Include="view\datatransaksi\FormTransaksiPenjualan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormTransaksiPenjualan.Designer.cs">
+    <Compile Include="view\datatransaksi\FormTransaksiPenjualan.Designer.cs">
       <DependentUpon>FormTransaksiPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\katalog\KategoriGigi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\katalog\KategoriGigi.Designer.cs">
+      <DependentUpon>KategoriGigi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\katalog\KategoriKopling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\katalog\KategoriKopling.Designer.cs">
+      <DependentUpon>KategoriKopling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\katalog\KategoriMatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\katalog\KategoriMatic.Designer.cs">
+      <DependentUpon>KategoriMatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\master\FormDataUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\master\FormDataUnit.Designer.cs">
+      <DependentUpon>FormDataUnit.cs</DependentUpon>
     </Compile>
     <Compile Include="view\ParentForm.cs">
       <SubType>Form</SubType>
@@ -151,23 +206,50 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="view\datatransaksi\FormTransaksiMasuk.resx">
+      <DependentUpon>FormTransaksiMasuk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FormAboutMe.resx">
       <DependentUpon>FormAboutMe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\FormDataCustomer.resx">
+    <EmbeddedResource Include="view\FormAwalUtama.resx">
+      <DependentUpon>FormAwalUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\master\FormDataCustomer.resx">
       <DependentUpon>FormDataCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\FormDataPegawai.resx">
+    <EmbeddedResource Include="view\master\FormDataPegawai.resx">
       <DependentUpon>FormDataPegawai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\FormLogin.resx">
+    <EmbeddedResource Include="view\katalog\BestSeller.resx">
+      <DependentUpon>BestSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\katalog\FormKatalog.resx">
+      <DependentUpon>FormKatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\katalog\Promo.resx">
+      <DependentUpon>Promo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\loginregister\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\FormRegister.resx">
+    <EmbeddedResource Include="view\loginregister\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\FormTransaksiPenjualan.resx">
+    <EmbeddedResource Include="view\datatransaksi\FormTransaksiPenjualan.resx">
       <DependentUpon>FormTransaksiPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\katalog\KategoriGigi.resx">
+      <DependentUpon>KategoriGigi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\katalog\KategoriKopling.resx">
+      <DependentUpon>KategoriKopling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\katalog\KategoriMatic.resx">
+      <DependentUpon>KategoriMatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\master\FormDataUnit.resx">
+      <DependentUpon>FormDataUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
@@ -189,5 +271,9 @@
   <ItemGroup>
     <None Include="Resources\MOTOR BG biru.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MOTOR PARENT FORM BG.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

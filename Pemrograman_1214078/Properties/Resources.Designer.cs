@@ -69,5 +69,15 @@ namespace Pemrograman_1214078.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MOTOR_PARENT_FORM_BG {
+            get {
+                object obj = ResourceManager.GetObject("MOTOR PARENT FORM BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
