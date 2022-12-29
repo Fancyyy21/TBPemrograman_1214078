@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTransaksiMasuk));
             this.tbHargaMotor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbJumlahUnit = new System.Windows.Forms.TextBox();
@@ -292,6 +293,7 @@
             this.Controls.Add(this.labelCariData);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTransaksiMasuk";
             this.Text = "FormTransaksiMasuk";
             ((System.ComponentModel.ISupportInitialize)(this.DataCustomer)).EndInit();

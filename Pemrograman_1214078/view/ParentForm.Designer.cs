@@ -80,22 +80,23 @@
             // dataCustomerToolStripMenuItem
             // 
             this.dataCustomerToolStripMenuItem.Name = "dataCustomerToolStripMenuItem";
-            this.dataCustomerToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.dataCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dataCustomerToolStripMenuItem.Text = "Data Customer";
             this.dataCustomerToolStripMenuItem.Click += new System.EventHandler(this.dataCustomerToolStripMenuItem_Click_1);
             // 
             // dataPegawaiToolStripMenuItem
             // 
             this.dataPegawaiToolStripMenuItem.Name = "dataPegawaiToolStripMenuItem";
-            this.dataPegawaiToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.dataPegawaiToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dataPegawaiToolStripMenuItem.Text = "Data Pegawai";
             this.dataPegawaiToolStripMenuItem.Click += new System.EventHandler(this.dataPegawaiToolStripMenuItem_Click_1);
             // 
             // dataUnitToolStripMenuItem
             // 
             this.dataUnitToolStripMenuItem.Name = "dataUnitToolStripMenuItem";
-            this.dataUnitToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.dataUnitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dataUnitToolStripMenuItem.Text = "Data Unit";
+            this.dataUnitToolStripMenuItem.Click += new System.EventHandler(this.dataUnitToolStripMenuItem_Click);
             // 
             // dataTransaksiToolStripMenuItem
             // 
@@ -118,6 +119,7 @@
             this.transaksiMasukToolStripMenuItem.Name = "transaksiMasukToolStripMenuItem";
             this.transaksiMasukToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.transaksiMasukToolStripMenuItem.Text = "Transaksi Masuk";
+            this.transaksiMasukToolStripMenuItem.Click += new System.EventHandler(this.transaksiMasukToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 

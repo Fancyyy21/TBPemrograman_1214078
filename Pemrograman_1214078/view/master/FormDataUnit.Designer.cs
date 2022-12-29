@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TabelDataPegawai = new System.Windows.Forms.GroupBox();
-            this.DataPegawai = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDataUnit));
+            this.TabelDataUnit = new System.Windows.Forms.GroupBox();
+            this.DataUnitt = new System.Windows.Forms.DataGridView();
             this.tbKondisiMotor = new System.Windows.Forms.TextBox();
             this.tbTahunProduksi = new System.Windows.Forms.TextBox();
             this.tbCariData = new System.Windows.Forms.TextBox();
@@ -50,33 +51,34 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tbMerkMotor = new System.Windows.Forms.TextBox();
             this.tbHargaMotor = new System.Windows.Forms.TextBox();
-            this.TabelDataPegawai.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataPegawai)).BeginInit();
+            this.TabelDataUnit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataUnitt)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TabelDataPegawai
+            // TabelDataUnit
             // 
-            this.TabelDataPegawai.Controls.Add(this.DataPegawai);
-            this.TabelDataPegawai.Location = new System.Drawing.Point(24, 378);
-            this.TabelDataPegawai.Margin = new System.Windows.Forms.Padding(4);
-            this.TabelDataPegawai.Name = "TabelDataPegawai";
-            this.TabelDataPegawai.Padding = new System.Windows.Forms.Padding(4);
-            this.TabelDataPegawai.Size = new System.Drawing.Size(1496, 437);
-            this.TabelDataPegawai.TabIndex = 81;
-            this.TabelDataPegawai.TabStop = false;
-            this.TabelDataPegawai.Text = "Tabel Data Unit";
+            this.TabelDataUnit.Controls.Add(this.DataUnitt);
+            this.TabelDataUnit.Location = new System.Drawing.Point(24, 378);
+            this.TabelDataUnit.Margin = new System.Windows.Forms.Padding(4);
+            this.TabelDataUnit.Name = "TabelDataUnit";
+            this.TabelDataUnit.Padding = new System.Windows.Forms.Padding(4);
+            this.TabelDataUnit.Size = new System.Drawing.Size(1496, 437);
+            this.TabelDataUnit.TabIndex = 81;
+            this.TabelDataUnit.TabStop = false;
+            this.TabelDataUnit.Text = "Tabel Data Unit";
             // 
-            // DataPegawai
+            // DataUnitt
             // 
-            this.DataPegawai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataPegawai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataPegawai.Location = new System.Drawing.Point(8, 31);
-            this.DataPegawai.Margin = new System.Windows.Forms.Padding(4);
-            this.DataPegawai.Name = "DataPegawai";
-            this.DataPegawai.RowHeadersWidth = 51;
-            this.DataPegawai.Size = new System.Drawing.Size(1480, 399);
-            this.DataPegawai.TabIndex = 0;
+            this.DataUnitt.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataUnitt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataUnitt.Location = new System.Drawing.Point(8, 31);
+            this.DataUnitt.Margin = new System.Windows.Forms.Padding(4);
+            this.DataUnitt.Name = "DataUnitt";
+            this.DataUnitt.RowHeadersWidth = 51;
+            this.DataUnitt.Size = new System.Drawing.Size(1480, 399);
+            this.DataUnitt.TabIndex = 0;
+            this.DataUnitt.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataUnitt_CellClick);
             // 
             // tbKondisiMotor
             // 
@@ -101,6 +103,7 @@
             this.tbCariData.Name = "tbCariData";
             this.tbCariData.Size = new System.Drawing.Size(347, 22);
             this.tbCariData.TabIndex = 76;
+            this.tbCariData.TextChanged += new System.EventHandler(this.tbCariData_TextChanged);
             // 
             // labelCariData
             // 
@@ -121,6 +124,7 @@
             this.btnHapus.TabIndex = 17;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnRefresh
             // 
@@ -131,6 +135,7 @@
             this.btnRefresh.TabIndex = 14;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSimpan
             // 
@@ -141,6 +146,7 @@
             this.btnSimpan.TabIndex = 15;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // btnUbah
             // 
@@ -151,6 +157,7 @@
             this.btnUbah.TabIndex = 16;
             this.btnUbah.Text = "Ubah";
             this.btnUbah.UseVisualStyleBackColor = true;
+            this.btnUbah.Click += new System.EventHandler(this.btnUbah_Click);
             // 
             // label7
             // 
@@ -278,7 +285,7 @@
             this.ClientSize = new System.Drawing.Size(1545, 847);
             this.Controls.Add(this.tbHargaMotor);
             this.Controls.Add(this.tbMerkMotor);
-            this.Controls.Add(this.TabelDataPegawai);
+            this.Controls.Add(this.TabelDataUnit);
             this.Controls.Add(this.tbKondisiMotor);
             this.Controls.Add(this.tbTahunProduksi);
             this.Controls.Add(this.tbCariData);
@@ -293,10 +300,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDataUnit";
             this.Text = "FormDataUnit";
-            this.TabelDataPegawai.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DataPegawai)).EndInit();
+            this.Load += new System.EventHandler(this.FormDataUnit_Load);
+            this.TabelDataUnit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataUnitt)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -304,8 +313,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox TabelDataPegawai;
-        private System.Windows.Forms.DataGridView DataPegawai;
+        private System.Windows.Forms.GroupBox TabelDataUnit;
+        private System.Windows.Forms.DataGridView DataUnitt;
         private System.Windows.Forms.TextBox tbKondisiMotor;
         private System.Windows.Forms.TextBox tbTahunProduksi;
         private System.Windows.Forms.TextBox tbCariData;

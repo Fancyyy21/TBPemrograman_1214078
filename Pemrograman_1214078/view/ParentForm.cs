@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Pemrograman_1214078.view.datatransaksi;
+using Pemrograman_1214078.view.master;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +36,12 @@ namespace Pemrograman_1214078.view
             newTransaksiPenjualan.MdiParent = this;
             newTransaksiPenjualan.Show();
         }
+        private void transaksiMasukToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTransaksiMasuk newTransaksiMasuk = new FormTransaksiMasuk();
+            newTransaksiMasuk.MdiParent = this;
+            newTransaksiMasuk.Show();
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -58,5 +66,14 @@ namespace Pemrograman_1214078.view
         {
             Application.Exit();
         }
+
+        private void dataUnitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDataUnit newUnit = new FormDataUnit();
+            newUnit.MdiParent = this;
+            newUnit.Show();
+        }
+
+        
     }
 }

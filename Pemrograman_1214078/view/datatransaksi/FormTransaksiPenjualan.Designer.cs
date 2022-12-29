@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTransaksiPenjualan));
             this.tbJumlahUnit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbNamaPegawaiMenangani = new System.Windows.Forms.TextBox();
@@ -40,8 +41,8 @@
             this.tbCariData = new System.Windows.Forms.TextBox();
             this.labelCariData = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.TabelDataCustomer = new System.Windows.Forms.GroupBox();
-            this.DataCustomer = new System.Windows.Forms.DataGridView();
+            this.TabelDataTransaksi = new System.Windows.Forms.GroupBox();
+            this.DataTransaksiPenjualan = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -54,8 +55,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dtTanggalTransaksi = new System.Windows.Forms.DateTimePicker();
             this.tbHargaMotor = new System.Windows.Forms.TextBox();
-            this.TabelDataCustomer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataCustomer)).BeginInit();
+            this.TabelDataTransaksi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTransaksiPenjualan)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,6 +148,7 @@
             this.tbCariData.Name = "tbCariData";
             this.tbCariData.Size = new System.Drawing.Size(347, 22);
             this.tbCariData.TabIndex = 63;
+            this.tbCariData.TextChanged += new System.EventHandler(this.tbCariData_TextChanged);
             // 
             // labelCariData
             // 
@@ -169,28 +171,29 @@
             this.label7.TabIndex = 61;
             this.label7.Text = "TRANSAKSI PENJUALAN";
             // 
-            // TabelDataCustomer
+            // TabelDataTransaksi
             // 
-            this.TabelDataCustomer.Controls.Add(this.DataCustomer);
-            this.TabelDataCustomer.Location = new System.Drawing.Point(22, 378);
-            this.TabelDataCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.TabelDataCustomer.Name = "TabelDataCustomer";
-            this.TabelDataCustomer.Padding = new System.Windows.Forms.Padding(4);
-            this.TabelDataCustomer.Size = new System.Drawing.Size(1501, 433);
-            this.TabelDataCustomer.TabIndex = 60;
-            this.TabelDataCustomer.TabStop = false;
-            this.TabelDataCustomer.Text = "Tabel Data Transaksi";
+            this.TabelDataTransaksi.Controls.Add(this.DataTransaksiPenjualan);
+            this.TabelDataTransaksi.Location = new System.Drawing.Point(22, 378);
+            this.TabelDataTransaksi.Margin = new System.Windows.Forms.Padding(4);
+            this.TabelDataTransaksi.Name = "TabelDataTransaksi";
+            this.TabelDataTransaksi.Padding = new System.Windows.Forms.Padding(4);
+            this.TabelDataTransaksi.Size = new System.Drawing.Size(1501, 433);
+            this.TabelDataTransaksi.TabIndex = 60;
+            this.TabelDataTransaksi.TabStop = false;
+            this.TabelDataTransaksi.Text = "Tabel Data Transaksi";
             // 
-            // DataCustomer
+            // DataTransaksiPenjualan
             // 
-            this.DataCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataCustomer.Location = new System.Drawing.Point(8, 31);
-            this.DataCustomer.Margin = new System.Windows.Forms.Padding(4);
-            this.DataCustomer.Name = "DataCustomer";
-            this.DataCustomer.RowHeadersWidth = 51;
-            this.DataCustomer.Size = new System.Drawing.Size(1475, 385);
-            this.DataCustomer.TabIndex = 0;
+            this.DataTransaksiPenjualan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataTransaksiPenjualan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataTransaksiPenjualan.Location = new System.Drawing.Point(8, 31);
+            this.DataTransaksiPenjualan.Margin = new System.Windows.Forms.Padding(4);
+            this.DataTransaksiPenjualan.Name = "DataTransaksiPenjualan";
+            this.DataTransaksiPenjualan.RowHeadersWidth = 51;
+            this.DataTransaksiPenjualan.Size = new System.Drawing.Size(1475, 385);
+            this.DataTransaksiPenjualan.TabIndex = 0;
+            this.DataTransaksiPenjualan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataTransaksiPenjualan_CellClick);
             // 
             // groupBox3
             // 
@@ -216,6 +219,7 @@
             this.btnHapus.TabIndex = 17;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnRefresh
             // 
@@ -226,6 +230,7 @@
             this.btnRefresh.TabIndex = 14;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSimpan
             // 
@@ -236,6 +241,7 @@
             this.btnSimpan.TabIndex = 15;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // btnUbah
             // 
@@ -246,6 +252,7 @@
             this.btnUbah.TabIndex = 16;
             this.btnUbah.Text = "Ubah";
             this.btnUbah.UseVisualStyleBackColor = true;
+            this.btnUbah.Click += new System.EventHandler(this.btnUbah_Click);
             // 
             // label2
             // 
@@ -333,13 +340,15 @@
             this.Controls.Add(this.tbCariData);
             this.Controls.Add(this.labelCariData);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.TabelDataCustomer);
+            this.Controls.Add(this.TabelDataTransaksi);
             this.Controls.Add(this.groupBox3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTransaksiPenjualan";
             this.Text = "FormTransaksiPenjualan";
-            this.TabelDataCustomer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DataCustomer)).EndInit();
+            this.Load += new System.EventHandler(this.FormTransaksiPenjualan_Load);
+            this.TabelDataTransaksi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataTransaksiPenjualan)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -360,8 +369,8 @@
         private System.Windows.Forms.TextBox tbCariData;
         private System.Windows.Forms.Label labelCariData;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox TabelDataCustomer;
-        private System.Windows.Forms.DataGridView DataCustomer;
+        private System.Windows.Forms.GroupBox TabelDataTransaksi;
+        private System.Windows.Forms.DataGridView DataTransaksiPenjualan;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnRefresh;
