@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pemrograman_1214078.view.katalog
 {
-    public partial class KategoriMatic : Form
+    public partial class KategoriMaticV2 : Form
     {
-        public KategoriMatic()
+        public KategoriMaticV2()
         {
             InitializeComponent();
         }
@@ -21,16 +21,8 @@ namespace Pemrograman_1214078.view.katalog
         {
             //tombolback
             this.Hide();
-            FormKatalog newKatalog = new FormKatalog();
-            newKatalog.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //tombolnext
-            this.Hide();
-            KategoriMaticV2 newMaticV2 = new KategoriMaticV2();
-            newMaticV2.Show();
+            KategoriMatic newMatic = new KategoriMatic();
+            newMatic.Show();
         }
     }
 }

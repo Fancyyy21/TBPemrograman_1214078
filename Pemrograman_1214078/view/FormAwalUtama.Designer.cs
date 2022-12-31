@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAwalUtama));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.superAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mASTERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +56,8 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.adminToolStripMenuItem});
+            this.adminToolStripMenuItem,
+            this.superAdminToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.fileToolStripMenuItem.Text = "Login Admin";
@@ -62,9 +65,16 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
+            // 
+            // superAdminToolStripMenuItem
+            // 
+            this.superAdminToolStripMenuItem.Name = "superAdminToolStripMenuItem";
+            this.superAdminToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.superAdminToolStripMenuItem.Text = "Super Admin";
+            this.superAdminToolStripMenuItem.Click += new System.EventHandler(this.superAdminToolStripMenuItem_Click);
             // 
             // mASTERToolStripMenuItem
             // 
@@ -97,6 +107,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1579, 875);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "FormAwalUtama";
             this.Text = "FormAwalUtama";
@@ -115,5 +126,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem superAdminToolStripMenuItem;
     }
 }

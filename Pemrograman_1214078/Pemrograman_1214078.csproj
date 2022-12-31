@@ -97,10 +97,14 @@
     <Compile Include="controller\master\DataPegawai.cs" />
     <Compile Include="controller\Koneksi.cs" />
     <Compile Include="controller\master\DataUnit.cs" />
+    <Compile Include="controller\superadmin\SuperAdmin.cs" />
+    <Compile Include="model\datatransaksi\M_TransaksiMasuk.cs" />
+    <Compile Include="model\datatransaksi\M_TransaksiPenjualan.cs" />
     <Compile Include="model\master\M_DataCustomer.cs" />
     <Compile Include="model\master\M_DataPegawai.cs" />
     <Compile Include="model\loginregister\M_User.cs" />
     <Compile Include="model\master\M_DataUnit.cs" />
+    <Compile Include="model\superadminlogin\M_superadmin.cs" />
     <Compile Include="view\datatransaksi\FormTransaksiMasuk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +122,18 @@
     </Compile>
     <Compile Include="view\FormAwalUtama.Designer.cs">
       <DependentUpon>FormAwalUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\katalog\KategoriMaticV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\katalog\KategoriMaticV2.Designer.cs">
+      <DependentUpon>KategoriMaticV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\loginregister\SuperAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\loginregister\SuperAdminLogin.Designer.cs">
+      <DependentUpon>SuperAdminLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="view\master\FormDataCustomer.cs">
       <SubType>Form</SubType>
@@ -217,6 +233,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormAwalUtama.resx">
       <DependentUpon>FormAwalUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\katalog\KategoriMaticV2.resx">
+      <DependentUpon>KategoriMaticV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\loginregister\SuperAdminLogin.resx">
+      <DependentUpon>SuperAdminLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\master\FormDataCustomer.resx">
       <DependentUpon>FormDataCustomer.cs</DependentUpon>

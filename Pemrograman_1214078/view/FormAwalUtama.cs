@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pemrograman_1214078.view.loginregister;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +37,13 @@ namespace Pemrograman_1214078.view
             this.Hide();
             FormKatalog newKatalog = new FormKatalog();
             newKatalog.Show();
+        }
+
+        private void superAdminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SuperAdminLogin newSuperAdmin = new SuperAdminLogin();
+            newSuperAdmin.Show();
         }
     }
 }

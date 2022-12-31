@@ -247,12 +247,13 @@ namespace Pemrograman_1214078
                 textBox2.UseSystemPasswordChar = true;
             }
         }
-        private void RegisterDisini_Click(object sender, EventArgs e)
+
+        /*private void RegisterDisini_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormRegister newRegister = new FormRegister();
             newRegister.Show();
-        }
+        }*/
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
