@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pemrograman_1214078.view.katalog
 {
-    public partial class KategoriKopling : Form
+    public partial class KategoriSport : Form
     {
-        public KategoriKopling()
+        public KategoriSport()
         {
             InitializeComponent();
         }

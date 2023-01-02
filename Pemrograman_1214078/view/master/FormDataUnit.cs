@@ -22,9 +22,9 @@ namespace Pemrograman_1214078.view.master
 
         public void Tampil()
         {
-            /*
-            DataBarang.DataSource = koneksi.ShowData("SELECT " + "id_nilai, matkul, kategori, t_nilai.npm, nama, nilai " +
+            /* DataBarang.DataSource = koneksi.ShowData("SELECT " + "id_nilai, matkul, kategori, t_nilai.npm, nama, nilai " +
                 "FROM t_nilai JOIN t_mahasiswa ON t_mahasiswa.npm = t_nilai.npm");*/
+
 
 
             //QueryDB

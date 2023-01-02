@@ -191,11 +191,11 @@
     <Compile Include="view\katalog\KategoriGigi.Designer.cs">
       <DependentUpon>KategoriGigi.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\katalog\KategoriKopling.cs">
+    <Compile Include="view\katalog\KategoriSport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\katalog\KategoriKopling.Designer.cs">
-      <DependentUpon>KategoriKopling.cs</DependentUpon>
+    <Compile Include="view\katalog\KategoriSport.Designer.cs">
+      <DependentUpon>KategoriSport.cs</DependentUpon>
     </Compile>
     <Compile Include="view\katalog\KategoriMatic.cs">
       <SubType>Form</SubType>
@@ -267,8 +267,8 @@
     <EmbeddedResource Include="view\katalog\KategoriGigi.resx">
       <DependentUpon>KategoriGigi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\katalog\KategoriKopling.resx">
-      <DependentUpon>KategoriKopling.cs</DependentUpon>
+    <EmbeddedResource Include="view\katalog\KategoriSport.resx">
+      <DependentUpon>KategoriSport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\katalog\KategoriMatic.resx">
       <DependentUpon>KategoriMatic.cs</DependentUpon>

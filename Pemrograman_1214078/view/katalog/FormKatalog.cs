@@ -60,7 +60,7 @@ namespace Pemrograman_1214078.view
         private void koplingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KategoriKopling newKopling = new KategoriKopling();
+            KategoriSport newKopling = new KategoriSport();
             //newTransaksiPenjualan.MdiParent = this;
             newKopling.ShowDialog();
         }
