@@ -21,8 +21,8 @@ namespace Pemrograman_1214078.controller
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("INSERT INTO user (username, password) VALUES('" + user.Username + "', '" +
-                user.Password + "')");
+                koneksi.ExecuteQuery("INSERT INTO user (username, password, role) VALUES('" + user.Username + "', '" +
+                user.Password + "', '" + user.Role + "')");
                 status = true;
                 MessageBox.Show("Data berhasil ditambahkan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();

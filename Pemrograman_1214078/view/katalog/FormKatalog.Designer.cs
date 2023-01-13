@@ -119,6 +119,7 @@
             this.IsMdiContainer = true;
             this.Name = "FormKatalog";
             this.Text = "FormKatalog";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormKatalog_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

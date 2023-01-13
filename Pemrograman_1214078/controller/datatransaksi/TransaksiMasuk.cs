@@ -20,8 +20,8 @@ namespace Pemrograman_1214078.controller.datatransaksi
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("INSERT INTO transaksi_masuk(supplier, merk, tanggal, jumlah_unit, harga, total) VALUES('" + transmasuk.Supplier + "', '" +
-                transmasuk.Merk + "', '" + transmasuk.Tanggal + "', '" + transmasuk.Jumlah_unit + "', '" + transmasuk.Harga + "', '" + transmasuk.Total + "')");
+                koneksi.ExecuteQuery("INSERT INTO transaksi_masuk(supplier, jenis, tanggal, jumlah_unit, harga, total) VALUES('" + transmasuk.Supplier + "', '" +
+                transmasuk.Jenis + "', '" + transmasuk.Tanggal + "', '" + transmasuk.Jumlah_unit + "', '" + transmasuk.Harga + "', '" + transmasuk.Total + "')");
                 status = true;
                 MessageBox.Show("Data berhasil ditambahkan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();
@@ -40,9 +40,9 @@ namespace Pemrograman_1214078.controller.datatransaksi
             {
                 koneksi.OpenConnection();
                 koneksi.ExecuteQuery("UPDATE transaksi_masuk SET supplier ='" + transmasuk.Supplier + "'," +
-                    "merk='" + transmasuk.Merk + "'," + "tanggal='" + transmasuk.Tanggal + "'," +
-                    "jumlah_unit='" + transmasuk.Jumlah_unit + "'," + "Harga='" + transmasuk.Harga + "'," +
-                    "Total='" + transmasuk.Total + "'," + "' WHERE id_masuk ='" + id + "'");
+                    "jenis='" + transmasuk.Jenis + "'," + "tanggal='" + transmasuk.Tanggal + "'," +
+                    "jumlah_unit='" + transmasuk.Jumlah_unit + "'," + "harga='" + transmasuk.Harga + "'," +
+                    "total='" + transmasuk.Total + "' WHERE id_masuk ='" + id + "'");
 
                 status = true;
                 MessageBox.Show("Data berhasil diubah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);

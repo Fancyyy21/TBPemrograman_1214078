@@ -30,7 +30,7 @@ namespace Pemrograman_1214078.view
 
         private void Registrasi_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox1.Text == "" )
+            if (textBox1.Text == "" || textBox1.Text == "" || role.SelectedIndex == -1)
             {
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -39,12 +39,14 @@ namespace Pemrograman_1214078.view
                 CekRegister cekregistr = new CekRegister();
                 user.Username = textBox1.Text;
                 user.Password = textBox2.Text;
+                user.Role = role.Text;
 
 
                 cekregistr.cek_register(user);
 
                 textBox1.Text = "";
                 textBox2.Text = "";
+                role.Text = "";
             }
 
         }
@@ -94,6 +96,11 @@ namespace Pemrograman_1214078.view
             this.Hide();
             FormAwalUtama newFormAwalUtama = new FormAwalUtama();
             newFormAwalUtama.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

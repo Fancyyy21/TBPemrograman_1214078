@@ -168,6 +168,7 @@ namespace Pemrograman_1214078
                 string password = textBox2.Text;
 
                 bool status = login.cek_login(username, password);
+                //bool status1 = login.cek_loginadmin(username, password);
                 if (status)
                 {
                     MessageBox.Show("Login Berhasil", "Berhasil");

@@ -64,5 +64,10 @@ namespace Pemrograman_1214078.view
             //newTransaksiPenjualan.MdiParent = this;
             newKopling.ShowDialog();
         }
+
+        private void FormKatalog_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

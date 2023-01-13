@@ -74,6 +74,14 @@ namespace Pemrograman_1214078.view
             newUnit.Show();
         }
 
-        
+        private void ParentForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ParentForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

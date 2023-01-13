@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTransaksiPenjualan));
             this.tbJumlahUnit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbNamaPegawaiMenangani = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbMerkMotorYangDibeli = new System.Windows.Forms.TextBox();
             this.tbNamaCustomer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbCariData = new System.Windows.Forms.TextBox();
@@ -49,12 +48,19 @@
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnUbah = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbKondisiMotor = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbTotal = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dtTanggalTransaksi = new System.Windows.Forms.DateTimePicker();
+            this.dtTanggalPenjualan = new System.Windows.Forms.DateTimePicker();
             this.tbHargaMotor = new System.Windows.Forms.TextBox();
+            this.IDunit = new System.Windows.Forms.ComboBox();
+            this.cbKondisiMotor = new System.Windows.Forms.ComboBox();
+            this.tbJenisMotor = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cbNamaPegawai = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.IDpegawai = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.TabelDataTransaksi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataTransaksiPenjualan)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -62,43 +68,36 @@
             // 
             // tbJumlahUnit
             // 
-            this.tbJumlahUnit.Location = new System.Drawing.Point(762, 121);
-            this.tbJumlahUnit.Margin = new System.Windows.Forms.Padding(5);
+            this.tbJumlahUnit.Location = new System.Drawing.Point(763, 174);
+            this.tbJumlahUnit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbJumlahUnit.Name = "tbJumlahUnit";
             this.tbJumlahUnit.Size = new System.Drawing.Size(347, 22);
             this.tbJumlahUnit.TabIndex = 75;
+            this.tbJumlahUnit.TextChanged += new System.EventHandler(this.tbJumlahUnit_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(598, 174);
+            this.label4.Location = new System.Drawing.Point(597, 126);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 16);
             this.label4.TabIndex = 73;
             this.label4.Text = "Harga Motor";
             // 
-            // tbNamaPegawaiMenangani
-            // 
-            this.tbNamaPegawaiMenangani.Location = new System.Drawing.Point(762, 68);
-            this.tbNamaPegawaiMenangani.Margin = new System.Windows.Forms.Padding(5);
-            this.tbNamaPegawaiMenangani.Name = "tbNamaPegawaiMenangani";
-            this.tbNamaPegawaiMenangani.Size = new System.Drawing.Size(347, 22);
-            this.tbNamaPegawaiMenangani.TabIndex = 72;
-            // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(598, 68);
+            this.label5.Location = new System.Drawing.Point(597, 68);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 37);
+            this.label5.Size = new System.Drawing.Size(125, 37);
             this.label5.TabIndex = 70;
-            this.label5.Text = "Nama Pegawai Yang Menangani";
+            this.label5.Text = "ID Pegawai";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(598, 129);
+            this.label6.Location = new System.Drawing.Point(597, 177);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 16);
@@ -115,18 +114,10 @@
             this.label3.TabIndex = 68;
             this.label3.Text = "Tanggal Transaksi";
             // 
-            // tbMerkMotorYangDibeli
-            // 
-            this.tbMerkMotorYangDibeli.Location = new System.Drawing.Point(168, 121);
-            this.tbMerkMotorYangDibeli.Margin = new System.Windows.Forms.Padding(5);
-            this.tbMerkMotorYangDibeli.Name = "tbMerkMotorYangDibeli";
-            this.tbMerkMotorYangDibeli.Size = new System.Drawing.Size(347, 22);
-            this.tbMerkMotorYangDibeli.TabIndex = 66;
-            // 
             // tbNamaCustomer
             // 
             this.tbNamaCustomer.Location = new System.Drawing.Point(168, 68);
-            this.tbNamaCustomer.Margin = new System.Windows.Forms.Padding(5);
+            this.tbNamaCustomer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbNamaCustomer.Name = "tbNamaCustomer";
             this.tbNamaCustomer.Size = new System.Drawing.Size(347, 22);
             this.tbNamaCustomer.TabIndex = 67;
@@ -134,7 +125,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 72);
+            this.label1.Location = new System.Drawing.Point(32, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 16);
@@ -144,7 +135,7 @@
             // tbCariData
             // 
             this.tbCariData.Location = new System.Drawing.Point(865, 303);
-            this.tbCariData.Margin = new System.Windows.Forms.Padding(5);
+            this.tbCariData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbCariData.Name = "tbCariData";
             this.tbCariData.Size = new System.Drawing.Size(347, 22);
             this.tbCariData.TabIndex = 63;
@@ -164,7 +155,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 19);
+            this.label7.Location = new System.Drawing.Point(24, 18);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(356, 33);
@@ -174,10 +165,10 @@
             // TabelDataTransaksi
             // 
             this.TabelDataTransaksi.Controls.Add(this.DataTransaksiPenjualan);
-            this.TabelDataTransaksi.Location = new System.Drawing.Point(22, 378);
-            this.TabelDataTransaksi.Margin = new System.Windows.Forms.Padding(4);
+            this.TabelDataTransaksi.Location = new System.Drawing.Point(21, 378);
+            this.TabelDataTransaksi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TabelDataTransaksi.Name = "TabelDataTransaksi";
-            this.TabelDataTransaksi.Padding = new System.Windows.Forms.Padding(4);
+            this.TabelDataTransaksi.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TabelDataTransaksi.Size = new System.Drawing.Size(1501, 433);
             this.TabelDataTransaksi.TabIndex = 60;
             this.TabelDataTransaksi.TabStop = false;
@@ -188,7 +179,7 @@
             this.DataTransaksiPenjualan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataTransaksiPenjualan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataTransaksiPenjualan.Location = new System.Drawing.Point(8, 31);
-            this.DataTransaksiPenjualan.Margin = new System.Windows.Forms.Padding(4);
+            this.DataTransaksiPenjualan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataTransaksiPenjualan.Name = "DataTransaksiPenjualan";
             this.DataTransaksiPenjualan.RowHeadersWidth = 51;
             this.DataTransaksiPenjualan.Size = new System.Drawing.Size(1475, 385);
@@ -201,10 +192,10 @@
             this.groupBox3.Controls.Add(this.btnRefresh);
             this.groupBox3.Controls.Add(this.btnSimpan);
             this.groupBox3.Controls.Add(this.btnUbah);
-            this.groupBox3.Location = new System.Drawing.Point(22, 271);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(5);
+            this.groupBox3.Location = new System.Drawing.Point(21, 271);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(5);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox3.Size = new System.Drawing.Size(623, 74);
             this.groupBox3.TabIndex = 59;
             this.groupBox3.TabStop = false;
@@ -213,7 +204,7 @@
             // btnHapus
             // 
             this.btnHapus.Location = new System.Drawing.Point(467, 26);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(5);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(141, 34);
             this.btnHapus.TabIndex = 17;
@@ -224,7 +215,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Location = new System.Drawing.Point(11, 26);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(141, 34);
             this.btnRefresh.TabIndex = 14;
@@ -235,7 +226,7 @@
             // btnSimpan
             // 
             this.btnSimpan.Location = new System.Drawing.Point(163, 26);
-            this.btnSimpan.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(141, 34);
             this.btnSimpan.TabIndex = 15;
@@ -246,7 +237,7 @@
             // btnUbah
             // 
             this.btnUbah.Location = new System.Drawing.Point(315, 26);
-            this.btnUbah.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUbah.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnUbah.Name = "btnUbah";
             this.btnUbah.Size = new System.Drawing.Size(141, 34);
             this.btnUbah.TabIndex = 16;
@@ -256,20 +247,12 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(32, 121);
+            this.label2.Location = new System.Drawing.Point(32, 126);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 35);
+            this.label2.Size = new System.Drawing.Size(69, 21);
             this.label2.TabIndex = 76;
-            this.label2.Text = "Merk Motor Yang Dibeli";
-            // 
-            // tbKondisiMotor
-            // 
-            this.tbKondisiMotor.Location = new System.Drawing.Point(168, 223);
-            this.tbKondisiMotor.Margin = new System.Windows.Forms.Padding(5);
-            this.tbKondisiMotor.Name = "tbKondisiMotor";
-            this.tbKondisiMotor.Size = new System.Drawing.Size(347, 22);
-            this.tbKondisiMotor.TabIndex = 78;
+            this.label2.Text = "ID Unit";
             // 
             // label8
             // 
@@ -283,8 +266,8 @@
             // 
             // tbTotal
             // 
-            this.tbTotal.Location = new System.Drawing.Point(762, 226);
-            this.tbTotal.Margin = new System.Windows.Forms.Padding(5);
+            this.tbTotal.Location = new System.Drawing.Point(763, 226);
+            this.tbTotal.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.Size = new System.Drawing.Size(347, 22);
             this.tbTotal.TabIndex = 80;
@@ -292,49 +275,128 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(598, 226);
+            this.label9.Location = new System.Drawing.Point(597, 226);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 16);
             this.label9.TabIndex = 79;
             this.label9.Text = "Total";
             // 
-            // dtTanggalTransaksi
+            // dtTanggalPenjualan
             // 
-            this.dtTanggalTransaksi.Location = new System.Drawing.Point(168, 174);
-            this.dtTanggalTransaksi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtTanggalTransaksi.Name = "dtTanggalTransaksi";
-            this.dtTanggalTransaksi.Size = new System.Drawing.Size(347, 22);
-            this.dtTanggalTransaksi.TabIndex = 81;
+            this.dtTanggalPenjualan.Location = new System.Drawing.Point(168, 174);
+            this.dtTanggalPenjualan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtTanggalPenjualan.Name = "dtTanggalPenjualan";
+            this.dtTanggalPenjualan.Size = new System.Drawing.Size(347, 22);
+            this.dtTanggalPenjualan.TabIndex = 81;
             // 
             // tbHargaMotor
             // 
-            this.tbHargaMotor.Location = new System.Drawing.Point(762, 171);
-            this.tbHargaMotor.Margin = new System.Windows.Forms.Padding(5);
+            this.tbHargaMotor.Location = new System.Drawing.Point(763, 123);
+            this.tbHargaMotor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbHargaMotor.Name = "tbHargaMotor";
             this.tbHargaMotor.Size = new System.Drawing.Size(347, 22);
             this.tbHargaMotor.TabIndex = 81;
+            // 
+            // IDunit
+            // 
+            this.IDunit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.IDunit.FormattingEnabled = true;
+            this.IDunit.Location = new System.Drawing.Point(168, 121);
+            this.IDunit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.IDunit.Name = "IDunit";
+            this.IDunit.Size = new System.Drawing.Size(212, 24);
+            this.IDunit.TabIndex = 83;
+            this.IDunit.SelectedIndexChanged += new System.EventHandler(this.cbJenisMotor_SelectedIndexChanged);
+            // 
+            // cbKondisiMotor
+            // 
+            this.cbKondisiMotor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbKondisiMotor.FormattingEnabled = true;
+            this.cbKondisiMotor.Items.AddRange(new object[] {
+            "Baru",
+            "Bekas"});
+            this.cbKondisiMotor.Location = new System.Drawing.Point(168, 226);
+            this.cbKondisiMotor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbKondisiMotor.Name = "cbKondisiMotor";
+            this.cbKondisiMotor.Size = new System.Drawing.Size(347, 24);
+            this.cbKondisiMotor.TabIndex = 84;
+            // 
+            // tbJenisMotor
+            // 
+            this.tbJenisMotor.Location = new System.Drawing.Point(387, 123);
+            this.tbJenisMotor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbJenisMotor.Name = "tbJenisMotor";
+            this.tbJenisMotor.Size = new System.Drawing.Size(129, 22);
+            this.tbJenisMotor.TabIndex = 85;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // cbNamaPegawai
+            // 
+            this.cbNamaPegawai.Location = new System.Drawing.Point(869, 71);
+            this.cbNamaPegawai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbNamaPegawai.Name = "cbNamaPegawai";
+            this.cbNamaPegawai.Size = new System.Drawing.Size(240, 22);
+            this.cbNamaPegawai.TabIndex = 88;
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
+            // IDpegawai
+            // 
+            this.IDpegawai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.IDpegawai.FormattingEnabled = true;
+            this.IDpegawai.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.IDpegawai.Location = new System.Drawing.Point(761, 68);
+            this.IDpegawai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.IDpegawai.Name = "IDpegawai";
+            this.IDpegawai.Size = new System.Drawing.Size(102, 24);
+            this.IDpegawai.TabIndex = 90;
+            this.IDpegawai.SelectedIndexChanged += new System.EventHandler(this.IDpegawai_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(876, 44);
+            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(190, 25);
+            this.label10.TabIndex = 91;
+            this.label10.Text = "Pegawai Yang Menangani";
             // 
             // FormTransaksiPenjualan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(157)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(1545, 847);
-            this.Controls.Add(this.dtTanggalTransaksi);
+            this.ClientSize = new System.Drawing.Size(1540, 846);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.IDpegawai);
+            this.Controls.Add(this.cbNamaPegawai);
+            this.Controls.Add(this.tbJenisMotor);
+            this.Controls.Add(this.cbKondisiMotor);
+            this.Controls.Add(this.IDunit);
+            this.Controls.Add(this.dtTanggalPenjualan);
             this.Controls.Add(this.tbHargaMotor);
             this.Controls.Add(this.tbTotal);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.tbKondisiMotor);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbJumlahUnit);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbNamaPegawaiMenangani);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbMerkMotorYangDibeli);
             this.Controls.Add(this.tbNamaCustomer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbCariData);
@@ -343,7 +405,7 @@
             this.Controls.Add(this.TabelDataTransaksi);
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormTransaksiPenjualan";
             this.Text = "FormTransaksiPenjualan";
             this.Load += new System.EventHandler(this.FormTransaksiPenjualan_Load);
@@ -359,11 +421,9 @@
 
         private System.Windows.Forms.TextBox tbJumlahUnit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbNamaPegawaiMenangani;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbMerkMotorYangDibeli;
         private System.Windows.Forms.TextBox tbNamaCustomer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbCariData;
@@ -377,11 +437,18 @@
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnUbah;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbKondisiMotor;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbTotal;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dtTanggalTransaksi;
+        private System.Windows.Forms.DateTimePicker dtTanggalPenjualan;
         private System.Windows.Forms.TextBox tbHargaMotor;
+        private System.Windows.Forms.ComboBox IDunit;
+        private System.Windows.Forms.ComboBox cbKondisiMotor;
+        private System.Windows.Forms.TextBox tbJenisMotor;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox cbNamaPegawai;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ComboBox IDpegawai;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -24,5 +24,10 @@ namespace Pemrograman_1214078.view.katalog
             FormKatalog newKatalog = new FormKatalog();
             newKatalog.Show();
         }
+
+        private void Promo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

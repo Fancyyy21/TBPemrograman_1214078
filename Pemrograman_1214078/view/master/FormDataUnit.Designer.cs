@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDataUnit));
             this.TabelDataUnit = new System.Windows.Forms.GroupBox();
             this.DataUnitt = new System.Windows.Forms.DataGridView();
-            this.tbKondisiMotor = new System.Windows.Forms.TextBox();
             this.tbTahunProduksi = new System.Windows.Forms.TextBox();
             this.tbCariData = new System.Windows.Forms.TextBox();
             this.labelCariData = new System.Windows.Forms.Label();
@@ -45,12 +44,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tbJumlahUnit = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbJenisMotor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tbMerkMotor = new System.Windows.Forms.TextBox();
             this.tbHargaMotor = new System.Windows.Forms.TextBox();
+            this.tbJenisMotor = new System.Windows.Forms.ComboBox();
+            this.cbKondisiMotor = new System.Windows.Forms.ComboBox();
             this.TabelDataUnit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataUnitt)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -79,14 +77,6 @@
             this.DataUnitt.Size = new System.Drawing.Size(1480, 399);
             this.DataUnitt.TabIndex = 0;
             this.DataUnitt.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataUnitt_CellClick);
-            // 
-            // tbKondisiMotor
-            // 
-            this.tbKondisiMotor.Location = new System.Drawing.Point(748, 214);
-            this.tbKondisiMotor.Margin = new System.Windows.Forms.Padding(5);
-            this.tbKondisiMotor.Name = "tbKondisiMotor";
-            this.tbKondisiMotor.Size = new System.Drawing.Size(347, 22);
-            this.tbKondisiMotor.TabIndex = 80;
             // 
             // tbTahunProduksi
             // 
@@ -173,7 +163,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(596, 221);
+            this.label4.Location = new System.Drawing.Point(600, 215);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 16);
@@ -202,7 +192,7 @@
             // 
             // tbJumlahUnit
             // 
-            this.tbJumlahUnit.Location = new System.Drawing.Point(168, 213);
+            this.tbJumlahUnit.Location = new System.Drawing.Point(168, 159);
             this.tbJumlahUnit.Margin = new System.Windows.Forms.Padding(5);
             this.tbJumlahUnit.Name = "tbJumlahUnit";
             this.tbJumlahUnit.Size = new System.Drawing.Size(347, 22);
@@ -211,20 +201,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 217);
+            this.label3.Location = new System.Drawing.Point(32, 163);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 69;
             this.label3.Text = "Jumlah Unit";
-            // 
-            // tbJenisMotor
-            // 
-            this.tbJenisMotor.Location = new System.Drawing.Point(168, 105);
-            this.tbJenisMotor.Margin = new System.Windows.Forms.Padding(5);
-            this.tbJenisMotor.Name = "tbJenisMotor";
-            this.tbJenisMotor.Size = new System.Drawing.Size(347, 22);
-            this.tbJenisMotor.TabIndex = 68;
             // 
             // label1
             // 
@@ -235,16 +217,6 @@
             this.label1.Size = new System.Drawing.Size(76, 16);
             this.label1.TabIndex = 66;
             this.label1.Text = "Jenis Motor";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 161);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 16);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "Merk Motor";
             // 
             // groupBox3
             // 
@@ -261,14 +233,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tombol Action";
             // 
-            // tbMerkMotor
-            // 
-            this.tbMerkMotor.Location = new System.Drawing.Point(168, 161);
-            this.tbMerkMotor.Margin = new System.Windows.Forms.Padding(5);
-            this.tbMerkMotor.Name = "tbMerkMotor";
-            this.tbMerkMotor.Size = new System.Drawing.Size(347, 22);
-            this.tbMerkMotor.TabIndex = 69;
-            // 
             // tbHargaMotor
             // 
             this.tbHargaMotor.Location = new System.Drawing.Point(748, 105);
@@ -277,16 +241,41 @@
             this.tbHargaMotor.Size = new System.Drawing.Size(347, 22);
             this.tbHargaMotor.TabIndex = 82;
             // 
+            // tbJenisMotor
+            // 
+            this.tbJenisMotor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tbJenisMotor.FormattingEnabled = true;
+            this.tbJenisMotor.Items.AddRange(new object[] {
+            "Matic",
+            "Gigi",
+            "Sport"});
+            this.tbJenisMotor.Location = new System.Drawing.Point(168, 109);
+            this.tbJenisMotor.Name = "tbJenisMotor";
+            this.tbJenisMotor.Size = new System.Drawing.Size(347, 24);
+            this.tbJenisMotor.TabIndex = 83;
+            // 
+            // cbKondisiMotor
+            // 
+            this.cbKondisiMotor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbKondisiMotor.FormattingEnabled = true;
+            this.cbKondisiMotor.Items.AddRange(new object[] {
+            "Baru",
+            "Bekas"});
+            this.cbKondisiMotor.Location = new System.Drawing.Point(748, 212);
+            this.cbKondisiMotor.Name = "cbKondisiMotor";
+            this.cbKondisiMotor.Size = new System.Drawing.Size(347, 24);
+            this.cbKondisiMotor.TabIndex = 84;
+            // 
             // FormDataUnit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(157)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1545, 847);
+            this.Controls.Add(this.cbKondisiMotor);
+            this.Controls.Add(this.tbJenisMotor);
             this.Controls.Add(this.tbHargaMotor);
-            this.Controls.Add(this.tbMerkMotor);
             this.Controls.Add(this.TabelDataUnit);
-            this.Controls.Add(this.tbKondisiMotor);
             this.Controls.Add(this.tbTahunProduksi);
             this.Controls.Add(this.tbCariData);
             this.Controls.Add(this.labelCariData);
@@ -296,9 +285,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbJumlahUnit);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbJenisMotor);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDataUnit";
@@ -315,7 +302,6 @@
         #endregion
         private System.Windows.Forms.GroupBox TabelDataUnit;
         private System.Windows.Forms.DataGridView DataUnitt;
-        private System.Windows.Forms.TextBox tbKondisiMotor;
         private System.Windows.Forms.TextBox tbTahunProduksi;
         private System.Windows.Forms.TextBox tbCariData;
         private System.Windows.Forms.Label labelCariData;
@@ -329,11 +315,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbJumlahUnit;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbJenisMotor;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox tbMerkMotor;
         private System.Windows.Forms.TextBox tbHargaMotor;
+        private System.Windows.Forms.ComboBox tbJenisMotor;
+        private System.Windows.Forms.ComboBox cbKondisiMotor;
     }
 }

@@ -1,6 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using Pemrograman_1214078.controller;
-using Pemrograman_1214078.controller.superadmin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +21,7 @@ namespace Pemrograman_1214078.view.loginregister
         private string database;
         private string uid;
         private string password;
-        SuperAdmin sadminlogin = new SuperAdmin();
+        CekLogin sadminlogin = new CekLogin();
         public SuperAdminLogin()
         {
             InitializeComponent();
@@ -51,7 +50,7 @@ namespace Pemrograman_1214078.view.loginregister
                 string username = textBox1.Text;
                 string password = textBox2.Text;
 
-                bool status = sadminlogin.cek_loginsadmin(username, password);
+                bool status = sadminlogin.cek_loginadmin(username, password);
                 if (status)
                 {
                     MessageBox.Show("Login Berhasil", "Berhasil");
@@ -92,6 +91,13 @@ namespace Pemrograman_1214078.view.loginregister
         {
             ReleaseCapture();
             SendMessage(Handle, 0x112, 0xf012, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAwalUtama newFormAwalUtama = new FormAwalUtama();
+            newFormAwalUtama.Show();
         }
     }
 }

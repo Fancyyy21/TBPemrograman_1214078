@@ -8,17 +8,17 @@ namespace Pemrograman_1214078.model.datatransaksi
 {
     internal class M_TransaksiMasuk
     {
-        string supplier, merk, tanggal, jumlah_unit, harga, total;
+        string supplier, jenis, tanggal, jumlah_unit, harga, total;
 
         public M_TransaksiMasuk()
         {
 
         }
 
-        public M_TransaksiMasuk(string supplier, string merk, string tanggal, string jumlah_unit, string harga, string total)
+        public M_TransaksiMasuk(string supplier, string jenis, string tanggal, string jumlah_unit, string harga, string total)
         {
             this.Supplier = supplier;
-            this.Merk = merk;
+            this.Jenis = jenis;
             this.Tanggal = tanggal;
             this.Jumlah_unit = jumlah_unit;
             this.Harga = harga;
@@ -26,10 +26,11 @@ namespace Pemrograman_1214078.model.datatransaksi
         }
 
         public string Supplier { get => supplier; set => supplier = value; }
-        public string Merk { get => merk; set => merk = value; }
+        public string Jenis { get => jenis; set => jenis = value; }
         public string Tanggal { get => tanggal; set => tanggal = value; }
         public string Jumlah_unit { get => jumlah_unit; set => jumlah_unit = value; }
         public string Harga { get => harga; set => harga = value; }
         public string Total { get => total; set => total = value; }
     }
+
 }

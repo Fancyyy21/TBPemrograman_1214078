@@ -42,7 +42,6 @@
             this.tbNOHP = new System.Windows.Forms.TextBox();
             this.dtTANGGALPEMBELIAN = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbMerkMotor = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tbAlamat = new System.Windows.Forms.TextBox();
@@ -51,6 +50,7 @@
             this.tbNamaCustomer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cbJenismotor = new System.Windows.Forms.ComboBox();
             this.groupBox3.SuspendLayout();
             this.TabelDataCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataCustomer)).BeginInit();
@@ -63,9 +63,9 @@
             this.groupBox3.Controls.Add(this.btnSimpan);
             this.groupBox3.Controls.Add(this.btnUbah);
             this.groupBox3.Location = new System.Drawing.Point(28, 270);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox3.Size = new System.Drawing.Size(623, 74);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
@@ -74,7 +74,7 @@
             // btnHapus
             // 
             this.btnHapus.Location = new System.Drawing.Point(467, 26);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(5);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(141, 34);
             this.btnHapus.TabIndex = 17;
@@ -85,7 +85,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Location = new System.Drawing.Point(11, 26);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(141, 34);
             this.btnRefresh.TabIndex = 14;
@@ -96,7 +96,7 @@
             // btnSimpan
             // 
             this.btnSimpan.Location = new System.Drawing.Point(163, 26);
-            this.btnSimpan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(5);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(141, 34);
             this.btnSimpan.TabIndex = 15;
@@ -107,7 +107,7 @@
             // btnUbah
             // 
             this.btnUbah.Location = new System.Drawing.Point(315, 26);
-            this.btnUbah.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnUbah.Margin = new System.Windows.Forms.Padding(5);
             this.btnUbah.Name = "btnUbah";
             this.btnUbah.Size = new System.Drawing.Size(141, 34);
             this.btnUbah.TabIndex = 16;
@@ -119,9 +119,9 @@
             // 
             this.TabelDataCustomer.Controls.Add(this.DataCustomer);
             this.TabelDataCustomer.Location = new System.Drawing.Point(28, 377);
-            this.TabelDataCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TabelDataCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.TabelDataCustomer.Name = "TabelDataCustomer";
-            this.TabelDataCustomer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TabelDataCustomer.Padding = new System.Windows.Forms.Padding(4);
             this.TabelDataCustomer.Size = new System.Drawing.Size(1501, 433);
             this.TabelDataCustomer.TabIndex = 27;
             this.TabelDataCustomer.TabStop = false;
@@ -132,7 +132,7 @@
             this.DataCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataCustomer.Location = new System.Drawing.Point(8, 31);
-            this.DataCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DataCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.DataCustomer.Name = "DataCustomer";
             this.DataCustomer.RowHeadersWidth = 51;
             this.DataCustomer.Size = new System.Drawing.Size(1475, 385);
@@ -153,7 +153,7 @@
             // tbCariData
             // 
             this.tbCariData.Location = new System.Drawing.Point(871, 302);
-            this.tbCariData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbCariData.Margin = new System.Windows.Forms.Padding(5);
             this.tbCariData.Name = "tbCariData";
             this.tbCariData.Size = new System.Drawing.Size(347, 22);
             this.tbCariData.TabIndex = 44;
@@ -172,7 +172,7 @@
             // tbNOHP
             // 
             this.tbNOHP.Location = new System.Drawing.Point(763, 156);
-            this.tbNOHP.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbNOHP.Margin = new System.Windows.Forms.Padding(5);
             this.tbNOHP.Name = "tbNOHP";
             this.tbNOHP.Size = new System.Drawing.Size(347, 22);
             this.tbNOHP.TabIndex = 58;
@@ -195,23 +195,15 @@
             this.label4.TabIndex = 56;
             this.label4.Text = "Tanggal Pembelian";
             // 
-            // tbMerkMotor
-            // 
-            this.tbMerkMotor.Location = new System.Drawing.Point(763, 103);
-            this.tbMerkMotor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.tbMerkMotor.Name = "tbMerkMotor";
-            this.tbMerkMotor.Size = new System.Drawing.Size(347, 22);
-            this.tbMerkMotor.TabIndex = 55;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(599, 107);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 16);
+            this.label5.Size = new System.Drawing.Size(149, 16);
             this.label5.TabIndex = 53;
-            this.label5.Text = "Merk Motor Yang Dibeli";
+            this.label5.Text = "Jenis Motor Yang Dibeli";
             // 
             // label6
             // 
@@ -226,7 +218,7 @@
             // tbAlamat
             // 
             this.tbAlamat.Location = new System.Drawing.Point(169, 212);
-            this.tbAlamat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbAlamat.Margin = new System.Windows.Forms.Padding(5);
             this.tbAlamat.Name = "tbAlamat";
             this.tbAlamat.Size = new System.Drawing.Size(347, 22);
             this.tbAlamat.TabIndex = 52;
@@ -244,7 +236,7 @@
             // tbKTP
             // 
             this.tbKTP.Location = new System.Drawing.Point(169, 156);
-            this.tbKTP.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbKTP.Margin = new System.Windows.Forms.Padding(5);
             this.tbKTP.Name = "tbKTP";
             this.tbKTP.Size = new System.Drawing.Size(347, 22);
             this.tbKTP.TabIndex = 49;
@@ -252,7 +244,7 @@
             // tbNamaCustomer
             // 
             this.tbNamaCustomer.Location = new System.Drawing.Point(169, 103);
-            this.tbNamaCustomer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbNamaCustomer.Margin = new System.Windows.Forms.Padding(5);
             this.tbNamaCustomer.Name = "tbNamaCustomer";
             this.tbNamaCustomer.Size = new System.Drawing.Size(347, 22);
             this.tbNamaCustomer.TabIndex = 50;
@@ -278,16 +270,29 @@
             this.label2.TabIndex = 48;
             this.label2.Text = "Nomor KTP";
             // 
+            // cbJenismotor
+            // 
+            this.cbJenismotor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbJenismotor.FormattingEnabled = true;
+            this.cbJenismotor.Items.AddRange(new object[] {
+            "Matic",
+            "Gigi",
+            "Sport"});
+            this.cbJenismotor.Location = new System.Drawing.Point(763, 103);
+            this.cbJenismotor.Name = "cbJenismotor";
+            this.cbJenismotor.Size = new System.Drawing.Size(347, 24);
+            this.cbJenismotor.TabIndex = 59;
+            // 
             // FormDataCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(157)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1545, 847);
+            this.Controls.Add(this.cbJenismotor);
             this.Controls.Add(this.tbNOHP);
             this.Controls.Add(this.dtTANGGALPEMBELIAN);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbMerkMotor);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbAlamat);
@@ -302,7 +307,7 @@
             this.Controls.Add(this.TabelDataCustomer);
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormDataCustomer";
             this.Text = "FormDataCustomer";
             this.Load += new System.EventHandler(this.FormDataCustomer_Load);
@@ -329,7 +334,6 @@
         private System.Windows.Forms.TextBox tbNOHP;
         private System.Windows.Forms.DateTimePicker dtTANGGALPEMBELIAN;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbMerkMotor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbAlamat;
@@ -338,5 +342,6 @@
         private System.Windows.Forms.TextBox tbNamaCustomer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbJenismotor;
     }
 }

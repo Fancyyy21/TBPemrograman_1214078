@@ -20,8 +20,8 @@ namespace Pemrograman_1214078.controller
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("INSERT INTO t_customer(nama_customer, nomor_ktp, alamat, merk_motor, nomor_hp, tanggal_pembelian) VALUES('" + datacust.Nama_customer + "', '" +
-                datacust.Nomor_ktp + "', '" + datacust.Alamat + "', '" + datacust.Merk_motor + "', '" + datacust.Nomor_hp+ "', '" + datacust.Tanggal_pembelian + "')");
+                koneksi.ExecuteQuery("INSERT INTO t_customer(nama_customer, nomor_ktp, alamat, jenis_motor, nomor_hp, tanggal_pembelian) VALUES('" + datacust.Nama_customer + "', '" +
+                datacust.Nomor_ktp + "', '" + datacust.Alamat + "', '" + datacust.Jenis_motor + "', '" + datacust.Nomor_hp+ "', '" + datacust.Tanggal_pembelian + "')");
                 status = true;
                 MessageBox.Show("Data berhasil ditambahkan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();
@@ -40,9 +40,9 @@ namespace Pemrograman_1214078.controller
             {
                 koneksi.OpenConnection();
                 koneksi.ExecuteQuery("UPDATE t_customer SET nama_customer ='" + datacust.Nama_customer + "'," +
-                    "nickname='" + datacust.Nomor_ktp + "'," + "id_akun='" + datacust.Alamat + "'," +
-                    "id_server='" + datacust.Merk_motor + "'," + "jumlah_diamond='" + datacust.Nomor_hp + "'," +
-                    "metode_pembayaran='" + datacust.Tanggal_pembelian + "' WHERE id_customer ='" + id + "'");
+                    "nomor_ktp='" + datacust.Nomor_ktp + "'," + "alamat='" + datacust.Alamat + "'," +
+                    "jenis_motor='" + datacust.Jenis_motor + "'," + "nomor_hp='" + datacust.Nomor_hp + "'," +
+                    "tanggal_pembelian='" + datacust.Tanggal_pembelian + "' WHERE id_customer ='" + id + "'");
                 status = true;
                 MessageBox.Show("Data berhasil diubah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();

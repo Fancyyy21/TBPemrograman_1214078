@@ -97,14 +97,12 @@
     <Compile Include="controller\master\DataPegawai.cs" />
     <Compile Include="controller\Koneksi.cs" />
     <Compile Include="controller\master\DataUnit.cs" />
-    <Compile Include="controller\superadmin\SuperAdmin.cs" />
     <Compile Include="model\datatransaksi\M_TransaksiMasuk.cs" />
     <Compile Include="model\datatransaksi\M_TransaksiPenjualan.cs" />
     <Compile Include="model\master\M_DataCustomer.cs" />
     <Compile Include="model\master\M_DataPegawai.cs" />
     <Compile Include="model\loginregister\M_User.cs" />
     <Compile Include="model\master\M_DataUnit.cs" />
-    <Compile Include="model\superadminlogin\M_superadmin.cs" />
     <Compile Include="view\datatransaksi\FormTransaksiMasuk.cs">
       <SubType>Form</SubType>
     </Compile>

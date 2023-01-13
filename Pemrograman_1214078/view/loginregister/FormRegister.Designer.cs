@@ -42,6 +42,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.role = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +95,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Marlett", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(940, 380);
+            this.checkBox1.Location = new System.Drawing.Point(931, 434);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(182, 26);
@@ -104,16 +106,17 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(940, 337);
+            this.textBox2.Location = new System.Drawing.Point(929, 309);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(245, 22);
             this.textBox2.TabIndex = 16;
             this.textBox2.UseSystemPasswordChar = true;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(940, 258);
+            this.textBox1.Location = new System.Drawing.Point(929, 230);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(245, 22);
@@ -123,7 +126,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Marlett", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(936, 220);
+            this.label3.Location = new System.Drawing.Point(925, 192);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 22);
@@ -134,7 +137,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Marlett", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(938, 297);
+            this.label2.Location = new System.Drawing.Point(927, 269);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 22);
@@ -154,7 +157,7 @@
             // 
             // Registrasi
             // 
-            this.Registrasi.Location = new System.Drawing.Point(1010, 428);
+            this.Registrasi.Location = new System.Drawing.Point(998, 480);
             this.Registrasi.Margin = new System.Windows.Forms.Padding(4);
             this.Registrasi.Name = "Registrasi";
             this.Registrasi.Size = new System.Drawing.Size(100, 28);
@@ -201,12 +204,37 @@
             this.label4.TabIndex = 23;
             this.label4.Text = "Buat Akun Pegawai Baru!!!";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Marlett", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(927, 352);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 22);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Role";
+            // 
+            // role
+            // 
+            this.role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.role.FormattingEnabled = true;
+            this.role.Items.AddRange(new object[] {
+            "admin",
+            "superadmin"});
+            this.role.Location = new System.Drawing.Point(929, 377);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(169, 24);
+            this.role.TabIndex = 26;
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(157)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1257, 532);
+            this.Controls.Add(this.role);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -246,5 +274,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox role;
     }
 }

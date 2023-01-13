@@ -59,7 +59,7 @@
             // tbCariData
             // 
             this.tbCariData.Location = new System.Drawing.Point(861, 302);
-            this.tbCariData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbCariData.Margin = new System.Windows.Forms.Padding(5);
             this.tbCariData.Name = "tbCariData";
             this.tbCariData.Size = new System.Drawing.Size(347, 22);
             this.tbCariData.TabIndex = 60;
@@ -119,7 +119,7 @@
             // tbAlamat
             // 
             this.tbAlamat.Location = new System.Drawing.Point(163, 214);
-            this.tbAlamat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbAlamat.Margin = new System.Windows.Forms.Padding(5);
             this.tbAlamat.Name = "tbAlamat";
             this.tbAlamat.Size = new System.Drawing.Size(347, 22);
             this.tbAlamat.TabIndex = 51;
@@ -137,7 +137,7 @@
             // tbNamaPegawai
             // 
             this.tbNamaPegawai.Location = new System.Drawing.Point(163, 106);
-            this.tbNamaPegawai.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbNamaPegawai.Margin = new System.Windows.Forms.Padding(5);
             this.tbNamaPegawai.Name = "tbNamaPegawai";
             this.tbNamaPegawai.Size = new System.Drawing.Size(347, 22);
             this.tbNamaPegawai.TabIndex = 49;
@@ -169,9 +169,9 @@
             this.groupBox3.Controls.Add(this.btnSimpan);
             this.groupBox3.Controls.Add(this.btnUbah);
             this.groupBox3.Location = new System.Drawing.Point(19, 270);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox3.Size = new System.Drawing.Size(623, 74);
             this.groupBox3.TabIndex = 45;
             this.groupBox3.TabStop = false;
@@ -180,7 +180,7 @@
             // btnHapus
             // 
             this.btnHapus.Location = new System.Drawing.Point(467, 26);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(5);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(141, 34);
             this.btnHapus.TabIndex = 17;
@@ -191,7 +191,7 @@
             // btnRefresh
             // 
             this.btnRefresh.Location = new System.Drawing.Point(11, 26);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(141, 34);
             this.btnRefresh.TabIndex = 14;
@@ -202,7 +202,7 @@
             // btnSimpan
             // 
             this.btnSimpan.Location = new System.Drawing.Point(163, 26);
-            this.btnSimpan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(5);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(141, 34);
             this.btnSimpan.TabIndex = 15;
@@ -213,7 +213,7 @@
             // btnUbah
             // 
             this.btnUbah.Location = new System.Drawing.Point(315, 26);
-            this.btnUbah.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnUbah.Margin = new System.Windows.Forms.Padding(5);
             this.btnUbah.Name = "btnUbah";
             this.btnUbah.Size = new System.Drawing.Size(141, 34);
             this.btnUbah.TabIndex = 16;
@@ -223,12 +223,13 @@
             // 
             // cbJenisKelamin
             // 
+            this.cbJenisKelamin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJenisKelamin.FormattingEnabled = true;
             this.cbJenisKelamin.Items.AddRange(new object[] {
             "Laki-Laki",
             "Perempuan"});
             this.cbJenisKelamin.Location = new System.Drawing.Point(743, 106);
-            this.cbJenisKelamin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbJenisKelamin.Margin = new System.Windows.Forms.Padding(4);
             this.cbJenisKelamin.Name = "cbJenisKelamin";
             this.cbJenisKelamin.Size = new System.Drawing.Size(347, 24);
             this.cbJenisKelamin.TabIndex = 61;
@@ -236,7 +237,7 @@
             // tbNoHP
             // 
             this.tbNoHP.Location = new System.Drawing.Point(743, 215);
-            this.tbNoHP.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbNoHP.Margin = new System.Windows.Forms.Padding(5);
             this.tbNoHP.Name = "tbNoHP";
             this.tbNoHP.Size = new System.Drawing.Size(347, 22);
             this.tbNoHP.TabIndex = 63;
@@ -244,7 +245,7 @@
             // tbUmur
             // 
             this.tbUmur.Location = new System.Drawing.Point(743, 160);
-            this.tbUmur.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbUmur.Margin = new System.Windows.Forms.Padding(5);
             this.tbUmur.Name = "tbUmur";
             this.tbUmur.Size = new System.Drawing.Size(347, 22);
             this.tbUmur.TabIndex = 62;
@@ -253,9 +254,9 @@
             // 
             this.TabelDataPegawai.Controls.Add(this.DataPegawai);
             this.TabelDataPegawai.Location = new System.Drawing.Point(19, 379);
-            this.TabelDataPegawai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TabelDataPegawai.Margin = new System.Windows.Forms.Padding(4);
             this.TabelDataPegawai.Name = "TabelDataPegawai";
-            this.TabelDataPegawai.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TabelDataPegawai.Padding = new System.Windows.Forms.Padding(4);
             this.TabelDataPegawai.Size = new System.Drawing.Size(1496, 437);
             this.TabelDataPegawai.TabIndex = 64;
             this.TabelDataPegawai.TabStop = false;
@@ -266,7 +267,7 @@
             this.DataPegawai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataPegawai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataPegawai.Location = new System.Drawing.Point(8, 31);
-            this.DataPegawai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DataPegawai.Margin = new System.Windows.Forms.Padding(4);
             this.DataPegawai.Name = "DataPegawai";
             this.DataPegawai.RowHeadersWidth = 51;
             this.DataPegawai.Size = new System.Drawing.Size(1480, 399);
@@ -275,15 +276,17 @@
             // 
             // cbJabatan
             // 
+            this.cbJabatan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJabatan.FormattingEnabled = true;
             this.cbJabatan.Items.AddRange(new object[] {
             "CEO",
             "Admin"});
             this.cbJabatan.Location = new System.Drawing.Point(163, 160);
-            this.cbJabatan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbJabatan.Margin = new System.Windows.Forms.Padding(4);
             this.cbJabatan.Name = "cbJabatan";
             this.cbJabatan.Size = new System.Drawing.Size(347, 24);
             this.cbJabatan.TabIndex = 62;
+            this.cbJabatan.SelectedIndexChanged += new System.EventHandler(this.cbJabatan_SelectedIndexChanged);
             // 
             // FormDataPegawai
             // 

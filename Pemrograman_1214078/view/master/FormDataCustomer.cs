@@ -34,7 +34,7 @@ namespace Pemrograman_1214078.view
             DataCustomer.Columns[1].HeaderText = "Nama_customer";
             DataCustomer.Columns[2].HeaderText = "Nomor KTP";
             DataCustomer.Columns[3].HeaderText = "Alamat";
-            DataCustomer.Columns[4].HeaderText = "Merk Motor";
+            DataCustomer.Columns[4].HeaderText = "Jenis Motor";
             DataCustomer.Columns[5].HeaderText = "Nomor HP";
             DataCustomer.Columns[6].HeaderText = "Tanggal Pembelian";
             
@@ -52,7 +52,7 @@ namespace Pemrograman_1214078.view
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            if (tbNamaCustomer.Text == "" || tbKTP.Text == "" || tbAlamat.Text == "" || tbMerkMotor.Text == "" || tbNOHP.Text == "" || dtTANGGALPEMBELIAN.Text == "")
+            if (tbNamaCustomer.Text == "" || tbKTP.Text == "" || tbAlamat.Text == "" || cbJenismotor.Text == "" || tbNOHP.Text == "" || dtTANGGALPEMBELIAN.Text == "")
             {
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -62,7 +62,7 @@ namespace Pemrograman_1214078.view
                 datacustomer.Nama_customer = tbNamaCustomer.Text;
                 datacustomer.Nomor_ktp = tbKTP.Text;
                 datacustomer.Alamat = tbAlamat.Text;
-                datacustomer.Merk_motor = tbMerkMotor.Text;
+                datacustomer.Jenis_motor = cbJenismotor.Text;
                 datacustomer.Nomor_hp = tbNOHP.Text;
                 datacustomer.Tanggal_pembelian = dtTANGGALPEMBELIAN.Text;
 
@@ -71,7 +71,7 @@ namespace Pemrograman_1214078.view
                 tbNamaCustomer.Text = "";
                 tbKTP.Text = "";
                 tbAlamat.Text = "";
-                tbMerkMotor.Text = "";
+                cbJenismotor.SelectedIndex = -1;
                 tbNOHP.Text = "";
                 dtTANGGALPEMBELIAN.Text = "";
 
@@ -85,14 +85,14 @@ namespace Pemrograman_1214078.view
             tbNamaCustomer.Text = "";
             tbKTP.Text = "";
             tbAlamat.Text = "";
-            tbMerkMotor.Text = "";
+            cbJenismotor.SelectedIndex = -1;
             tbNOHP.Text = "";
             dtTANGGALPEMBELIAN.Text = "";
         }
 
         private void btnUbah_Click(object sender, EventArgs e)
         {
-            if (tbNamaCustomer.Text == "" || tbKTP.Text == "" || tbAlamat.Text == "" || tbMerkMotor.Text == "" || tbNOHP.Text == "" || dtTANGGALPEMBELIAN.Text == "")
+            if (tbNamaCustomer.Text == "" || tbKTP.Text == "" || tbAlamat.Text == "" || cbJenismotor.SelectedIndex == -1 || tbNOHP.Text == "" || dtTANGGALPEMBELIAN.Text == "")
             {
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -102,7 +102,7 @@ namespace Pemrograman_1214078.view
                 datacustomer.Nama_customer = tbNamaCustomer.Text;
                 datacustomer.Nomor_ktp = tbKTP.Text;
                 datacustomer.Alamat = tbAlamat.Text;
-                datacustomer.Merk_motor = tbMerkMotor.Text;
+                datacustomer.Jenis_motor = cbJenismotor.Text;
                 datacustomer.Nomor_hp = tbNOHP.Text;
                 datacustomer.Tanggal_pembelian = dtTANGGALPEMBELIAN.Text;
 
@@ -111,7 +111,7 @@ namespace Pemrograman_1214078.view
                 tbNamaCustomer.Text = "";
                 tbKTP.Text = "";
                 tbAlamat.Text = "";
-                tbMerkMotor.Text = "";
+                cbJenismotor.SelectedIndex = -1;
                 tbNOHP.Text = "";
                 dtTANGGALPEMBELIAN.Text = "";
 
@@ -137,7 +137,7 @@ namespace Pemrograman_1214078.view
             tbNamaCustomer.Text = DataCustomer.Rows[e.RowIndex].Cells[1].Value.ToString();
             tbKTP.Text = DataCustomer.Rows[e.RowIndex].Cells[2].Value.ToString();
             tbAlamat.Text = DataCustomer.Rows[e.RowIndex].Cells[3].Value.ToString();
-            tbMerkMotor.Text = DataCustomer.Rows[e.RowIndex].Cells[4].Value.ToString();
+            cbJenismotor.Text = DataCustomer.Rows[e.RowIndex].Cells[4].Value.ToString();
             tbNOHP.Text = DataCustomer.Rows[e.RowIndex].Cells[5].Value.ToString();
             dtTANGGALPEMBELIAN.Text = DataCustomer.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
@@ -150,7 +150,7 @@ namespace Pemrograman_1214078.view
                     "OR nama_customer LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR nomor_ktp LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR alamat LIKE '%' '" + tbCariData.Text + "' '%' " +
-                    "OR merk_motor LIKE '%' '" + tbCariData.Text + "' '%' " +
+                    "OR jenis_motor LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR nomor_hp LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR tanggal_pembelian LIKE '%' '" + tbCariData.Text + "' '%' ");
         }

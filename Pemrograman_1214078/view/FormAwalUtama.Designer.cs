@@ -65,14 +65,14 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // superAdminToolStripMenuItem
             // 
             this.superAdminToolStripMenuItem.Name = "superAdminToolStripMenuItem";
-            this.superAdminToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.superAdminToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.superAdminToolStripMenuItem.Text = "Super Admin";
             this.superAdminToolStripMenuItem.Click += new System.EventHandler(this.superAdminToolStripMenuItem_Click);
             // 
@@ -111,6 +111,7 @@
             this.IsMdiContainer = true;
             this.Name = "FormAwalUtama";
             this.Text = "FormAwalUtama";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAwalUtama_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

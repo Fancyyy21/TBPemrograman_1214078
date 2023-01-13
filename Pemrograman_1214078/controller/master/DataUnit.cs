@@ -21,8 +21,7 @@ namespace Pemrograman_1214078.controller.master
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("INSERT INTO t_unit(jenis, merk, jumlah_unit, harga, tahun_produksi, kondisi) VALUES('" + data_unit.Jenis + "', '" +
-                data_unit.Merk + "', '" + data_unit.Jumlah_unit + "', '" + data_unit.Harga + "', '" + data_unit.Tahun_produksi + "', '" + data_unit.Kondisi + "')");
+                koneksi.ExecuteQuery("INSERT INTO t_unit(jenis, jumlah_unit, harga, tahun_produksi, kondisi) VALUES('" + data_unit.Jenis +  "', '" + data_unit.Jumlah_unit + "', '" + data_unit.Harga + "', '" + data_unit.Tahun_produksi + "', '" + data_unit.Kondisi + "')");
                 status = true;
                 MessageBox.Show("Data berhasil ditambahkan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();
@@ -40,10 +39,9 @@ namespace Pemrograman_1214078.controller.master
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("UPDATE t_unit SET t_unit ='" + data_unit.Jenis + "'," +
-                    "jabatan='" + data_unit.Merk + "'," + "alamat='" + data_unit.Jumlah_unit + "'," +
-                    "jenis_kelamin='" + data_unit.Harga + "'," + "umur='" + data_unit.Tahun_produksi + "'," +
-                    "nohp='" + data_unit.Kondisi + "' WHERE t_unit ='" + id + "'");
+                koneksi.ExecuteQuery("UPDATE t_unit SET jenis ='" + data_unit.Jenis +  "'," + "jumlah_unit='" + data_unit.Jumlah_unit + "'," +
+                    "harga='" + data_unit.Harga + "'," + "tahun_produksi='" + data_unit.Tahun_produksi + "'," +
+                    "kondisi='" + data_unit.Kondisi + "' WHERE id_unit ='" + id + "'");
                 status = true;
                 MessageBox.Show("Data berhasil diubah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();
@@ -62,7 +60,7 @@ namespace Pemrograman_1214078.controller.master
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("DELETE FROM t_unit WHERE t_unit ='" + id + "'");
+                koneksi.ExecuteQuery("DELETE FROM t_unit WHERE id_unit ='" + id + "'");
                 status = true;
                 MessageBox.Show("Data berhasil dihapus", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();

@@ -45,5 +45,10 @@ namespace Pemrograman_1214078.view
             SuperAdminLogin newSuperAdmin = new SuperAdminLogin();
             newSuperAdmin.Show();
         }
+
+        private void FormAwalUtama_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

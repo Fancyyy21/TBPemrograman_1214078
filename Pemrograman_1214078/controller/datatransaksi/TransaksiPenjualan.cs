@@ -21,8 +21,8 @@ namespace Pemrograman_1214078.controller.datatransaksi
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("INSERT INTO transaksi_penjualan(nama_customer, merk, tanggal, kondisi, pegawai_menangani, jumlah_unit, harga, total) VALUES('" + transpenjualan.Nama_customer + "', '" +
-                transpenjualan.Merk + "', '" + transpenjualan.Tanggal + "', '" + transpenjualan.Kondisi + "', '" + transpenjualan.Pegawai_menangani + "', '" + transpenjualan.Jumlah_unit + "' , '" + transpenjualan.Harga + "', '" + transpenjualan.Total + "')");
+                koneksi.ExecuteQuery("INSERT INTO transaksi_penjualan(id_unit, id_pegawai, nama_customer, jenis, tanggal, kondisi, jumlah_unit, total) VALUES('" + transpenjualan.Id_unit + "', '" + transpenjualan.Id_pegawai + "', '" + transpenjualan.Nama_customer + "', '" +
+                transpenjualan.Jenis + "', '" + transpenjualan.Tanggal + "', '" + transpenjualan.Kondisi +  "', '" + transpenjualan.Jumlah_unit +  "', '" + transpenjualan.Total + "')");
                 status = true;
                 MessageBox.Show("Data berhasil ditambahkan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();
@@ -36,16 +36,16 @@ namespace Pemrograman_1214078.controller.datatransaksi
 
         public bool Update(M_TransaksiPenjualan transpenjualan, string id)
         {
+ 
             Boolean status = false;
             try
             {
                 koneksi.OpenConnection();
-                koneksi.ExecuteQuery("UPDATE transaksi_penjualan SET nama_customer ='" + transpenjualan.Nama_customer + "'," +
-                    "merk='" + transpenjualan.Merk + "'," + "tanggal='" + transpenjualan.Tanggal + "'," +
-                    "kondisi='" + transpenjualan.Kondisi + "'," + "pegawai_menangani='" + transpenjualan.Pegawai_menangani + "'," +
-                    "jumlah_unit='" + transpenjualan.Jumlah_unit + "'," + 
-                    "harga='" + transpenjualan.Harga + "'," +
-                    "total='" + transpenjualan.Total + "'," + "' WHERE id_penjualan ='" + id + "'");
+                koneksi.ExecuteQuery("UPDATE transaksi_penjualan SET id_unit ='" + transpenjualan.Id_unit + "'," +
+                    "id_pegawai='" + transpenjualan.Id_pegawai + "'," + "nama_customer='" + transpenjualan.Nama_customer + "'," + "jenis='" + transpenjualan.Jenis + "'," + "tanggal='" + transpenjualan.Tanggal + "'," +
+                    "kondisi='" + transpenjualan.Kondisi + "'," + 
+                    "jumlah_unit='" + transpenjualan.Jumlah_unit + "'," +
+                    "total='" + transpenjualan.Total + "' WHERE id_penjualan ='" + id + "'");
                 status = true;
                 MessageBox.Show("Data berhasil diubah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.CloseConnection();

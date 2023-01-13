@@ -153,5 +153,10 @@ namespace Pemrograman_1214078.view
                     "OR umur LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR nohp LIKE '%' '" + tbCariData.Text + "' '%' ");
         }
+
+        private void cbJabatan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
