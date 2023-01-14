@@ -61,6 +61,7 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.IDpegawai = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.TabelDataTransaksi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataTransaksiPenjualan)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -143,13 +144,13 @@
             // 
             // labelCariData
             // 
-            this.labelCariData.AutoSize = true;
             this.labelCariData.Location = new System.Drawing.Point(769, 306);
             this.labelCariData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelCariData.Name = "labelCariData";
-            this.labelCariData.Size = new System.Drawing.Size(63, 16);
+            this.labelCariData.Size = new System.Drawing.Size(73, 19);
             this.labelCariData.TabIndex = 62;
-            this.labelCariData.Text = "Cari Data";
+            this.labelCariData.Text = "Cari Data ";
+            this.labelCariData.Click += new System.EventHandler(this.labelCariData_Click);
             // 
             // label7
             // 
@@ -354,10 +355,6 @@
             // 
             this.IDpegawai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.IDpegawai.FormattingEnabled = true;
-            this.IDpegawai.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
             this.IDpegawai.Location = new System.Drawing.Point(761, 68);
             this.IDpegawai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IDpegawai.Name = "IDpegawai";
@@ -374,12 +371,22 @@
             this.label10.TabIndex = 91;
             this.label10.Text = "Pegawai Yang Menangani";
             // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(769, 330);
+            this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(216, 19);
+            this.label11.TabIndex = 92;
+            this.label11.Text = "ID Penjualan dan Nama Customer";
+            // 
             // FormTransaksiPenjualan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(157)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1540, 846);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.IDpegawai);
             this.Controls.Add(this.cbNamaPegawai);
@@ -450,5 +457,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ComboBox IDpegawai;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

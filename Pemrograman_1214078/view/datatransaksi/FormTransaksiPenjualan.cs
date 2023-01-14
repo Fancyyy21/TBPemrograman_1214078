@@ -223,16 +223,23 @@ namespace Pemrograman_1214078.view
 
         private void tbCariData_TextChanged(object sender, EventArgs e)
         {
+            DataTransaksiPenjualan.DataSource = koneksi.ShowData("SELECT id_penjualan, transaksi_penjualan.id_unit, transaksi_penjualan.id_pegawai, nama_customer, transaksi_penjualan.jenis, tanggal, transaksi_penjualan.kondisi, nama_pegawai, transaksi_penjualan.jumlah_unit, harga, transaksi_penjualan.total " +
+                "FROM transaksi_penjualan JOIN t_pegawai ON t_pegawai.id_pegawai = transaksi_penjualan.id_pegawai JOIN t_unit ON transaksi_penjualan.id_unit = t_unit.id_unit WHERE id_penjualan LIKE '%' '" + tbCariData.Text + "' '%' " +
+                    "OR nama_customer LIKE '%' '" + tbCariData.Text + "' '%' ");
+
+            //DataTransaksiPenjualan.DataSource = koneksi.ShowData("SELECT id_penjualan, transaksi_penjualan.id_unit, transaksi_penjualan.id_pegawai, nama_customer, transaksi_penjualan.jenis, tanggal, transaksi_penjualan.kondisi, nama_pegawai, transaksi_penjualan.jumlah_unit, harga, transaksi_penjualan.total " +
+            //"FROM transaksi_penjualan JOIN t_pegawai ON t_pegawai.id_pegawai = transaksi_penjualan.id_pegawai JOIN t_unit ON transaksi_penjualan.id_unit = t_unit.id_unit WHERE t_transaksi.id_barang LIKE '%' '" + tbCariData.Text + "' '%' OR nama_barang LIKE '%' '" + tbCariData.Text + "' '%' ");
+
             //Query DB Search Data
-            DataTransaksiPenjualan.DataSource = koneksi.ShowData("SELECT * FROM transaksi_penjualan WHERE id_penjualan LIKE '%' '" + tbCariData.Text + "' '%' " +
+            /*DataTransaksiPenjualan.DataSource = koneksi.ShowData("SELECT * FROM transaksi_penjualan WHERE id_penjualan LIKE '%' '" + tbCariData.Text + "' '%' " +
+                    "OR id_unit LIKE '%' '" + tbCariData.Text + "' '%' " +
+                    "OR id_pegawai LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR nama_customer LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR jenis LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR tanggal LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR kondisi LIKE '%' '" + tbCariData.Text + "' '%' " +
-                    "OR pegawai_menangani LIKE '%' '" + tbCariData.Text + "' '%' " +
                     "OR jumlah_unit LIKE '%' '" + tbCariData.Text + "' '%' " +
-                    "OR harga LIKE '%' '" + tbCariData.Text + "' '%' " +
-                    "OR total LIKE '%' '" + tbCariData.Text + "' '%' ");
+                    "OR total LIKE '%' '" + tbCariData.Text + "' '%' "); */
         }
 
         public void GetHargaMotor()
@@ -305,6 +312,11 @@ namespace Pemrograman_1214078.view
         private void IDpegawai_SelectedIndexChanged(object sender, EventArgs e)
         {
             GetNamaPegawai();
+        }
+
+        private void labelCariData_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

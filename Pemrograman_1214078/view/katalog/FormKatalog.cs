@@ -65,7 +65,9 @@ namespace Pemrograman_1214078.view
             newKopling.ShowDialog();
         }
 
-        private void FormKatalog_FormClosing(object sender, FormClosingEventArgs e)
+       
+
+        private void FormKatalog_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

@@ -25,7 +25,7 @@ namespace Pemrograman_1214078.view.katalog
             newKatalog.Show();
         }
 
-        private void KategoriGigi_FormClosing(object sender, FormClosingEventArgs e)
+        private void KategoriGigi_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

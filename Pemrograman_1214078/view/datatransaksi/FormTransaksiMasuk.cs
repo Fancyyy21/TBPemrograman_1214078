@@ -139,8 +139,8 @@ namespace Pemrograman_1214078.view.datatransaksi
             tbSupplier.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[1].Value.ToString();
             cbJenisMotor.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[2].Value.ToString();
             dtTanggalMasuk.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[3].Value.ToString();
-            tbJumlahUnit.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[4].Value.ToString();
-            tbHargaMotor.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[5].Value.ToString();
+            tbHargaMotor.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[4].Value.ToString();
+            tbJumlahUnit.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[5].Value.ToString();
             tbTotal.Text = DataTransaksiMasuk.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
 

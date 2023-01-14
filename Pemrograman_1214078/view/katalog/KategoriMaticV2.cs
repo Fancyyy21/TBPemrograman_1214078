@@ -25,7 +25,9 @@ namespace Pemrograman_1214078.view.katalog
             newMatic.Show();
         }
 
-        private void KategoriMaticV2_FormClosing(object sender, FormClosingEventArgs e)
+        
+
+        private void KategoriMaticV2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

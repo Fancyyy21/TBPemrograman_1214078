@@ -143,7 +143,7 @@
             this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(25, 30);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 30);
             this.button1.TabIndex = 41;
@@ -266,7 +266,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "KategoriMaticV2";
             this.Text = "KategoriMaticV2";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.KategoriMaticV2_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.KategoriMaticV2_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

@@ -25,7 +25,8 @@ namespace Pemrograman_1214078.view.katalog
             newKatalog.Show();
         }
 
-        private void BestSeller_FormClosing(object sender, FormClosingEventArgs e)
+       
+        private void BestSeller_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
