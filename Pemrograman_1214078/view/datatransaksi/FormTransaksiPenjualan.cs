@@ -57,7 +57,7 @@ namespace Pemrograman_1214078.view
 
         public void GetDataUnit()
         {
-            //ambil data ID Barang dari table (t_barang) untuk mengisi data pada combobox ID Barang
+            //ambil data ID Unit dari table (t_unit) untuk mengisi data pada combobox ID Unit
             koneksi.OpenConnection();
             MySqlDataReader reader = koneksi.reader("SELECT * FROM t_unit");
             while (reader.Read())
@@ -69,7 +69,7 @@ namespace Pemrograman_1214078.view
         }
         public void GetDataPegawai()
         {
-            //ambil data ID Barang dari table (t_barang) untuk mengisi data pada combobox ID Barang
+            //ambil data ID Pegawai dari table (t_pegawai) untuk mengisi data pada combobox ID Pegawai
             koneksi.OpenConnection();
             MySqlDataReader reader = koneksi.reader("SELECT * FROM t_pegawai");
             while (reader.Read())
@@ -244,7 +244,7 @@ namespace Pemrograman_1214078.view
 
         public void GetHargaMotor()
         {
-            //ambil data Nama Barang ketika combobox ID Barang dipilih
+            //ambil data HargaMotor ketika combobox ID Unit dipilih
             koneksi.OpenConnection();
             MySqlDataReader reader = koneksi.reader("SELECT harga FROM t_unit " + "WHERE id_unit = '" + IDunit.Text + "'");
             while (reader.Read())
@@ -256,7 +256,7 @@ namespace Pemrograman_1214078.view
         }
         public void GetJenisMotor()
         {
-            //ambil data Nama Barang ketika combobox ID Barang dipilih
+            //ambil data JenisMotor ketika combobox ID Unit dipilih
             koneksi.OpenConnection();
             MySqlDataReader reader = koneksi.reader("SELECT jenis FROM t_unit " + "WHERE id_unit = '" + IDunit.Text + "'");
             while (reader.Read())
@@ -269,7 +269,7 @@ namespace Pemrograman_1214078.view
 
         public void GetNamaPegawai()
         {
-            //ambil data Harga Barang ketikan combobox ID Barang dipilih
+            //ambil data Nama Pegawai ketikan combobox ID pegawai dipilih
             koneksi.OpenConnection();
             MySqlDataReader reader = koneksi.reader("SELECT nama_pegawai FROM t_pegawai " + "WHERE id_pegawai = '" + IDpegawai.Text + "'");
             while (reader.Read())

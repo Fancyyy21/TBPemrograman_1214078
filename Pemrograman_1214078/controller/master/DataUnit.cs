@@ -11,7 +11,7 @@ namespace Pemrograman_1214078.controller.master
 {
     internal class DataUnit
     {
-        //Memanggil class koneksi dan membuat objek baru
+        //Memanggil class koneksi 
         Koneksi koneksi = new Koneksi();
 
         //Method insert

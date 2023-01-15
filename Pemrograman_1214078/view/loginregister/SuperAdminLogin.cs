@@ -15,12 +15,12 @@ namespace Pemrograman_1214078.view.loginregister
 {
     public partial class SuperAdminLogin : Form
     {
-
-        private MySqlConnection conn;
-        private string server;
+        /*private string server;
         private string database;
         private string uid;
         private string password;
+        private MySqlConnection conn;*/
+    
         CekLogin sadminlogin = new CekLogin();
         public SuperAdminLogin()
         {
@@ -32,12 +32,12 @@ namespace Pemrograman_1214078.view.loginregister
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr one, int two, int three, int four);
 
-        private void RegisterDisini_Click(object sender, EventArgs e)
+        /*private void RegisterDisini_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormRegister newRegister = new FormRegister();
             newRegister.Show();
-        }
+        }*/
 
         private void Login_Click(object sender, EventArgs e)
         {

@@ -50,5 +50,10 @@ namespace Pemrograman_1214078.view
         {
             Application.Exit();
         }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

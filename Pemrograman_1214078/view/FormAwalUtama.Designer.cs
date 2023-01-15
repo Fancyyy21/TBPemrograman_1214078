@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAwalUtama));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAdmin = new System.Windows.Forms.ToolStripMenuItem();
             this.superAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mASTERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,23 +56,24 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.adminToolStripMenuItem,
+            this.MenuAdmin,
             this.superAdminToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.fileToolStripMenuItem.Text = "Login Admin";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
-            // adminToolStripMenuItem
+            // MenuAdmin
             // 
-            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
-            this.adminToolStripMenuItem.Text = "Admin";
-            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
+            this.MenuAdmin.Name = "MenuAdmin";
+            this.MenuAdmin.Size = new System.Drawing.Size(224, 26);
+            this.MenuAdmin.Text = "Admin";
+            this.MenuAdmin.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // superAdminToolStripMenuItem
             // 
             this.superAdminToolStripMenuItem.Name = "superAdminToolStripMenuItem";
-            this.superAdminToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.superAdminToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.superAdminToolStripMenuItem.Text = "Super Admin";
             this.superAdminToolStripMenuItem.Click += new System.EventHandler(this.superAdminToolStripMenuItem_Click);
             // 
@@ -125,7 +126,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mASTERToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuAdmin;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem superAdminToolStripMenuItem;
     }

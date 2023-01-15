@@ -43,10 +43,10 @@ namespace Pemrograman_1214078.view
             newTransaksiMasuk.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        /*private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-        }
+        */
 
         private void dataCustomerToolStripMenuItem_Click_1(object sender, EventArgs e)
         {

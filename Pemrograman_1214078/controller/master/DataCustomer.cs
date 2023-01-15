@@ -10,7 +10,7 @@ namespace Pemrograman_1214078.controller
 {
     internal class DataCustomer
     {
-        //Memanggil class koneksi dan membuat objek baru
+        //Memanggil class koneksi 
         Koneksi koneksi = new Koneksi();
 
         //Method insert

@@ -16,11 +16,12 @@ namespace Pemrograman_1214078
 {
     public partial class FormLogin : Form
     {
-        private MySqlConnection conn;
-        private string server;
+        /*private string server;
         private string database;
         private string uid;
         private string password;
+        private MySqlConnection conn;*/
+
         CekLogin login = new CekLogin();
 
         public FormLogin()

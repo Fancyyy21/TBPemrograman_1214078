@@ -63,12 +63,12 @@ namespace Pemrograman_1214078.view
             }
         }
 
-        private void LoginDisini_Click(object sender, EventArgs e)
+        /*private void LoginDisini_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormLogin newLogin = new FormLogin();
             newLogin.Show();
-        }
+        }*/
 
         private void btnClose_Click(object sender, EventArgs e)
         {
